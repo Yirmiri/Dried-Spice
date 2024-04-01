@@ -1,6 +1,18 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "dried_spice:item/copper_tea_kettle"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "dried_spice:item/copper_tea_kettle_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "dried_spice:item/copper_tea_kettle_item"
+    },
+    "ground": {
+      "parent": "dried_spice:item/copper_tea_kettle_item"
+    },
+    "fixed": {
+      "parent": "dried_spice:item/copper_tea_kettle_item"
+    }
   }
 }
