@@ -63,7 +63,7 @@ public class DriedSpice {
             event.accept(DSItems.PEPPER_SEEDS);
             event.accept(DSItems.SOUL_PEPPER_SEEDS);
         }
-//
+
         if (event.getTab() == DSItemGroups.DRIED_SPICE_TAB.get() && (DSCompatRegistries.excessive_building)) {
             event.accept(ExcessiveBuildingCompat.SOUL_STOVE);
 
