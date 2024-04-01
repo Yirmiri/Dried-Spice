@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dried_spice:pepper"
+          "name": "dried_spice:pepper_seeds"
         }
       ],
       "rolls": 1.0
@@ -36,7 +36,7 @@
               "formula": "minecraft:binomial_with_bonus_count",
               "function": "minecraft:apply_bonus",
               "parameters": {
-                "extra": 3,
+                "extra": 2,
                 "probability": 0.5714286
               }
             }

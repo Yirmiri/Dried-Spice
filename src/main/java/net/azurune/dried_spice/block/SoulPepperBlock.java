@@ -15,15 +15,21 @@ public class SoulPepperBlock extends PepperBlock {
         super(properties);
     }
 
-    public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-        if (!entity.isSteppingCarefully() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity)) {
+    public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+        int i = state.getValue(AGE);
+        if (!entity.isSteppingCarefully() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity) && i < 2) {
             entity.hurt(level.damageSources().hotFloor(), 2);
         }
 
-        super.stepOn(level, pos, state, entity);
+        super.entityInside(state, level, pos, entity);
     }
 
     public ItemStack getCloneItemStack(BlockGetter getter, BlockPos pos, BlockState state) {
         return new ItemStack(DSItems.SOUL_PEPPER_SEEDS.get());
+    }
+
+    public static boolean glowing(BlockState state) {
+        int i = state.getValue(AGE);
+        return i < 2;
     }
 }

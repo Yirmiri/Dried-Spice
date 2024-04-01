@@ -1,5 +1,6 @@
 package net.azurune.dried_spice.other;
 
+import net.azurune.dried_spice.block.SoulPepperBlock;
 import net.azurune.dried_spice.block.StoveBlock;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -21,7 +22,7 @@ public class DSProperties {
         //NATURAL
         public static final BlockBehaviour.Properties AZALEA_FLOWER = BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.WET_GRASS).ignitedByLava().pushReaction(PushReaction.DESTROY);
         public static final BlockBehaviour.Properties PEPPER_PLANT = BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).noCollission().instabreak().sound(SoundType.NETHER_WART).pushReaction(PushReaction.DESTROY);
-        public static final BlockBehaviour.Properties SOUL_PEPPER_PLANT = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).noCollission().instabreak().sound(SoundType.NETHER_WART).pushReaction(PushReaction.DESTROY);
+        public static final BlockBehaviour.Properties SOUL_PEPPER_PLANT = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).noCollission().instabreak().sound(SoundType.NETHER_WART).pushReaction(PushReaction.DESTROY).lightLevel((blockState) -> { return SoulPepperBlock.glowing(blockState) ? 0 : 5; });
 
         //COMPAT
         public static final BlockBehaviour.Properties SOUL_STOVE = BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.BASS).strength(2.0F, 4.0F).sound(SoundType.MUD_BRICKS).lightLevel((blockState) -> { return StoveBlock.burntOut(blockState) ? 3 : 7; });
