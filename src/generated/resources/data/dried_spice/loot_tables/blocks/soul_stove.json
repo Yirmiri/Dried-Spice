@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dried_spice:soul_stove"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "dried_spice:blocks/soul_stove"
+}

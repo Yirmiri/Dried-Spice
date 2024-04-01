@@ -1,0 +1,16 @@
+{
+  "type": "dried_spice:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "excessive_building:blocks/ancient_leaves"
+    },
+    {
+      "chance": 0.2,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "dried_spice:ancient_tea_leaves",
+  "max": 1,
+  "min": 1
+}

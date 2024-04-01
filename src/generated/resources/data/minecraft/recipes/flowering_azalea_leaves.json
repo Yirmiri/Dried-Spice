@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dried_spice:azalea_flower"
+    },
+    {
+      "item": "minecraft:azalea_leaves"
+    }
+  ],
+  "result": {
+    "item": "minecraft:flowering_azalea_leaves"
+  }
+}

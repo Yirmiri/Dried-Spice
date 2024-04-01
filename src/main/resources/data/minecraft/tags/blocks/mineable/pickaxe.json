@@ -1,0 +1,8 @@
+{
+  "values": [
+    "dried_spice:copper_tea_kettle",
+    "dried_spice:iron_tea_kettle",
+{ "id": "dried_spice:soul_stove", "required": false },
+    "dried_spice:stove"
+  ]
+}

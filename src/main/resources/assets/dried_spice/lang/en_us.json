@@ -1,0 +1,21 @@
+{
+  "block.dried_spice.copper_tea_kettle": "Copper Tea Kettle",
+  "block.dried_spice.iron_tea_kettle": "Iron Tea Kettle",
+  "block.dried_spice.stove": "Stove",
+  "block.dried_spice.tea_kettle": "Tea Kettle",
+  "block.dried_spice.azalea_flower": "Azalea Flower",
+
+  "item.dried_spice.pepper": "Pepper",
+  "item.dried_spice.soul_pepper": "Ghost Pepper",
+  "item.dried_spice.tea_leaves": "Tea Leaves",
+  "item.dried_spice.dried_tea_leaves": "Dried Tea Leaves",
+  "item.dried_spice.pepper_seeds": "Pepper Seeds",
+  "item.dried_spice.soul_pepper_seeds": "Ghost Pepper Seeds",
+
+  "block.dried_spice.soul_stove": "Soul Stove",
+
+  "item.dried_spice.ancient_tea_leaves": "Ancient Tea Leaves",
+  "item.dried_spice.ancient_dried_tea_leaves": "Ancient Dried Tea Leaves",
+
+  "dried_spice_tab": "Dried Spice Tab"
+}

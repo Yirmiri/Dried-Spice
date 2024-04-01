@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "dried_spice:block/soul_pepper_crop_stage2"
+  }
+}

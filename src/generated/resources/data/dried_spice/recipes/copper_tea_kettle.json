@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "@": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "item": "dried_spice:copper_tea_kettle"
+  },
+  "show_notification": true
+}

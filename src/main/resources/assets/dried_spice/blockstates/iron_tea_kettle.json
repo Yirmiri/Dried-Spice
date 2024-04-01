@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dried_spice:block/iron_tea_kettle"
+    },
+    "facing=east": {
+      "model": "dried_spice:block/iron_tea_kettle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "dried_spice:block/iron_tea_kettle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dried_spice:block/iron_tea_kettle",
+      "y": 270
+    }
+  }
+}

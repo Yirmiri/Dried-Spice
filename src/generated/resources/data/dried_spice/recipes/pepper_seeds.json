@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dried_spice:pepper"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "dried_spice:pepper_seeds"
+  }
+}

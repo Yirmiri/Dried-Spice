@@ -1,0 +1,16 @@
+{
+  "type": "dried_spice:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:blocks/flowering_azalea_leaves"
+    },
+    {
+      "chance": 0.1,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "dried_spice:azalea_flower",
+  "max": 1,
+  "min": 1
+}

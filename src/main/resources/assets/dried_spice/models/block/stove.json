@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "dried_spice:block/stove_bottom",
+    "front": "dried_spice:block/stove_front",
+    "side": "dried_spice:block/stove_side",
+    "top": "dried_spice:block/stove_top"
+  }
+}
