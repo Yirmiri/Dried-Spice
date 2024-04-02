@@ -1,7 +1,6 @@
 package net.azurune.dried_spice.datagen;
 
 import net.azurune.dried_spice.DriedSpice;
-import net.azurune.dried_spice.compat.ExcessiveBuildingCompat;
 import net.azurune.dried_spice.register.DSBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;

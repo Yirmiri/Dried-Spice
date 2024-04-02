@@ -115,6 +115,7 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
         for(int i = 0; i < itemHandler.getSlots(); i++) {
             inventory.setItem(i, itemHandler.getStackInSlot(i));
         }
+
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
@@ -221,37 +222,5 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
     @Override
     public CompoundTag getUpdateTag() {
         return saveWithoutMetadata();
-    }
-
-    private final ContainerOpenersCounter openersCounter = new ContainerOpenersCounter() {
-        protected void onOpen(Level level, BlockPos pos, BlockState state) {
-            TeaKettleBlockEntity.this.playSound(state, SoundEvents.IRON_DOOR_OPEN);
-            TeaKettleBlockEntity.this.updateBlockState(state, true);
-        }
-
-        protected void onClose(Level level, BlockPos pos, BlockState state) {
-            TeaKettleBlockEntity.this.playSound(state, SoundEvents.IRON_DOOR_CLOSE);
-            TeaKettleBlockEntity.this.updateBlockState(state, false);
-        }
-
-        protected void openerCountChanged(Level level, BlockPos pos, BlockState state, int i, int i1) {
-        }
-
-        @Override
-        protected boolean isOwnContainer(Player player) {
-            return player.containerMenu instanceof TeaKettleMenu;
-        }
-    };
-
-    void updateBlockState(BlockState state, boolean b) {
-        this.level.setBlock(this.getBlockPos(), state.setValue(TeaKettleBlock.OPEN, Boolean.valueOf(b)), 3);
-    }
-
-    void playSound(BlockState state, SoundEvent soundEvent) {
-        Vec3i vec3i = state.getValue(TeaKettleBlock.FACING).getNormal();
-        double x = (double)this.worldPosition.getX() + 0.5D + (double)vec3i.getX() / 2.0D;
-        double y = (double)this.worldPosition.getY() + 0.5D + (double)vec3i.getY() / 2.0D;
-        double z = (double)this.worldPosition.getZ() + 0.5D + (double)vec3i.getZ() / 2.0D;
-        this.level.playSound((Player)null, x, y, z, soundEvent, SoundSource.BLOCKS, 0.5F, this.level.random.nextFloat() * 0.1F + 0.9F);
     }
 }

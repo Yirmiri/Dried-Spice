@@ -8,11 +8,8 @@ import net.azurune.dried_spice.register.DSItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CarrotBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -38,10 +35,10 @@ public class DSBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(DSBlocks.STOVE.get());
         this.dropSelf(ExcessiveBuildingCompat.SOUL_STOVE.get());
         this.addChancePlantTable(DSBlocks.AZALEA_FLOWER.get());
-        LootItemCondition.Builder pepperLootCondition = LootItemBlockStatePropertyCondition.hasBlockStateProperties(DSBlocks.PEPPER_CROP.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PepperBlock.AGE, 3));
-        this.add(DSBlocks.PEPPER_CROP.get(), this.applyExplosionDecay(DSBlocks.PEPPER_CROP.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(DSItems.PEPPER_SEEDS.get()))).withPool(LootPool.lootPool().when(pepperLootCondition).add(LootItem.lootTableItem(DSItems.PEPPER.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))))));
-        LootItemCondition.Builder soulPepperLootCondition = LootItemBlockStatePropertyCondition.hasBlockStateProperties(DSBlocks.SOUL_PEPPER_CROP.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PepperBlock.AGE, 3));
-        this.add(DSBlocks.SOUL_PEPPER_CROP.get(), this.applyExplosionDecay(DSBlocks.SOUL_PEPPER_CROP.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(DSItems.SOUL_PEPPER_SEEDS.get()))).withPool(LootPool.lootPool().when(soulPepperLootCondition).add(LootItem.lootTableItem(DSItems.SOUL_PEPPER.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))))));
+        LootItemCondition.Builder loottable$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(DSBlocks.PEPPER_CROP.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PepperBlock.AGE, 3));
+        this.add(DSBlocks.PEPPER_CROP.get(), this.applyExplosionDecay(DSBlocks.PEPPER_CROP.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(DSItems.PEPPER_SEEDS.get()))).withPool(LootPool.lootPool().when(loottable$builder1).add(LootItem.lootTableItem(DSItems.PEPPER.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))))));
+        LootItemCondition.Builder loottable$builder2 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(DSBlocks.SOUL_PEPPER_CROP.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PepperBlock.AGE, 3));
+        this.add(DSBlocks.SOUL_PEPPER_CROP.get(), this.applyExplosionDecay(DSBlocks.SOUL_PEPPER_CROP.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(DSItems.SOUL_PEPPER_SEEDS.get()))).withPool(LootPool.lootPool().when(loottable$builder2).add(LootItem.lootTableItem(DSItems.SOUL_PEPPER.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))))));
     }
 
     @Override
