@@ -23,7 +23,6 @@ public class DriedSpice {
     public DriedSpice() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
-        DSRecipeTypes.RECIPE_TYPES.register(modEventBus);
 
         DSBlocks.register(modEventBus);
         DSItems.register(modEventBus);
@@ -33,6 +32,8 @@ public class DriedSpice {
         DSLootTableModifier.register(modEventBus);
         DSCompatRegistries.register(modEventBus);
         DSRecipeSerializers.register(modEventBus);
+
+        DSRecipeTypes.RECIPE_TYPES.register(modEventBus);
 
         modEventBus.addListener(this::onClientSetup);
         modEventBus.addListener(this::addCreative);
