@@ -12,8 +12,8 @@ import net.minecraft.world.entity.player.Inventory;
 public class TeaKettleScreen extends AbstractContainerScreen<TeaKettleMenu> {
     private static final ResourceLocation GUI_TEXTURE = new ResourceLocation(DriedSpice.MODID, "textures/gui/tea_kettle.png");
 
-    public TeaKettleScreen(TeaKettleMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
-        super(pMenu, pPlayerInventory, pTitle);
+    public TeaKettleScreen(TeaKettleMenu menu, Inventory inv, Component title) {
+        super(menu, inv, title);
     }
 
     @Override

@@ -1,6 +1,5 @@
 {
   "type": "dried_spice:brewing",
-  "experience": 0.1,
   "ingredients": [
     {
       "item": "minecraft:apple"

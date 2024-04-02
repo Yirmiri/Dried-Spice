@@ -17,7 +17,7 @@ public class SoulPepperBlock extends PepperBlock {
 
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
         int i = state.getValue(AGE);
-        if (!entity.isSteppingCarefully() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity) && i < 2) {
+        if (!entity.isSteppingCarefully() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity) && i >= 2) {
             entity.hurt(level.damageSources().hotFloor(), 2);
         }
 

@@ -1,13 +1,8 @@
 package net.azurune.dried_spice.block.entity;
 
-import net.azurune.dried_spice.block.TeaKettleBlock;
 import net.azurune.dried_spice.datagen.DSBlockTagProvider;
 import net.azurune.dried_spice.other.screen.TeaKettleMenu;
-import net.minecraft.core.Vec3i;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.level.block.entity.ContainerOpenersCounter;
+import net.azurune.dried_spice.register.DSRecipeTypes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import net.azurune.dried_spice.other.recipe.TeaKettleRecipe;
@@ -48,9 +43,9 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
     private static final int INPUT_SLOT_4 = 4;
     private static final int CUP_SLOT = 5;
     private static final int OUTPUT_SLOT = 0;
-    private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
     protected final ContainerData data;
 
+    private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
     private final ItemStackHandler itemHandler = new ItemStackHandler(6) {
 
         @Override
@@ -144,7 +139,7 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
         if(hasRecipe()) {
             if (blockState.is(DSBlockTagProvider.HEAT_BLOCKS)) {
                 increaseBrewingProgress();
-                setChanged(level, pos, blockState);
+                setChanged(level, pos, state);
 
                 if (hasProgressFinished()) {
                     craftItem();
@@ -173,7 +168,7 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasRecipe() {
-        java.util.Optional<TeaKettleRecipe> recipe = getCurrentRecipe();
+        Optional<TeaKettleRecipe> recipe = getCurrentRecipe();
 
         if(recipe.isEmpty()) {
             return false;
@@ -183,14 +178,14 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
         return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
     }
 
-    private java.util.Optional<TeaKettleRecipe> getCurrentRecipe() {
+    private Optional<TeaKettleRecipe> getCurrentRecipe() {
         SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
 
         for(int i = 0; i < itemHandler.getSlots(); i++) {
             inventory.setItem(i, this.itemHandler.getStackInSlot(i));
         }
 
-        return this.level.getRecipeManager().getRecipeFor(TeaKettleRecipe.Type.BREWING, inventory, level);
+        return this.level.getRecipeManager().getRecipeFor(DSRecipeTypes.BREWING.get(), inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

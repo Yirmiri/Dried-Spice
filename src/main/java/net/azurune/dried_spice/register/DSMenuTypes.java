@@ -14,9 +14,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class DSMenuTypes {
     public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.MENU_TYPES, DriedSpice.MODID);
 
-    public static final RegistryObject<MenuType<TeaKettleMenu>> TEA_KETTLE_MENU = registerMenuType("tea_kettle_menu", TeaKettleMenu::new);
+    public static final RegistryObject<MenuType<TeaKettleMenu>> TEA_KETTLE_MENU = register("tea_kettle_menu", TeaKettleMenu::new);
 
-    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {
+    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> register(String name, IContainerFactory<T> factory) {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }
 
