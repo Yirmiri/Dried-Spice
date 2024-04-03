@@ -57,8 +57,8 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
         }
     };
 
-    public TeaKettleBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(DSBlockEntities.TEA_KETTLE.get(), pPos, pBlockState);
+    public TeaKettleBlockEntity(BlockPos pos, BlockState state) {
+        super(DSBlockEntities.TEA_KETTLE.get(), pos, state);
         this.data = new ContainerData() {
             @Override
             public int get(int index) {
