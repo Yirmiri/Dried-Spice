@@ -124,10 +124,10 @@ public class TeaKettleRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public @Nullable TeaKettleRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf byteBuf) {
-            int i = byteBuf.readVarInt();
+            int i = byteBuf.readInt();
             NonNullList<Ingredient> ingredients = NonNullList.withSize(i, Ingredient.EMPTY);
 
-            for (int j = 0; j < ingredients.size(); ++j) {
+            for (int j = 0; j < ingredients.size(); j++) {
                 ingredients.set(j, Ingredient.fromNetwork(byteBuf));
             }
 
