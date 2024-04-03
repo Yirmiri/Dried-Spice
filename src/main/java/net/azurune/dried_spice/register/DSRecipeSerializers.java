@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class DSRecipeSerializers {
     public static final DeferredRegister<RecipeSerializer<?>> RECIPE_SERIALIZERS = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, DriedSpice.MODID);
 
-    public static final RegistryObject<RecipeSerializer<?>> BREWING_SERIALIZER = RECIPE_SERIALIZERS.register("brewing", TeaKettleRecipe.Serializer::new);
+    public static final RegistryObject<RecipeSerializer<TeaKettleRecipe>> BREWING_SERIALIZER = RECIPE_SERIALIZERS.register("brewing", TeaKettleRecipe.Serializer::new);
 
     public static void register(IEventBus eventBus) {
         RECIPE_SERIALIZERS.register(eventBus);

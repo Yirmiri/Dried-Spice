@@ -89,10 +89,6 @@ public class TeaKettleRecipe implements Recipe<SimpleContainer> {
     }
 
     public static class Serializer implements RecipeSerializer<TeaKettleRecipe> {
-
-        public Serializer() {
-        }
-
         @Override
         public TeaKettleRecipe fromJson(ResourceLocation id, JsonObject json) {
             final NonNullList<Ingredient> ingredients = readIngredients(GsonHelper.getAsJsonArray(json, "ingredients"));
