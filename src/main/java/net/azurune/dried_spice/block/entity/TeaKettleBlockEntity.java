@@ -150,11 +150,11 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
 
     public void tick(Level level, BlockPos pos, BlockState state) {
         BlockState blockState = level.getBlockState(pos.below());
-        if(hasRecipe() && (blockState.is(DSBlockTagProvider.HEAT_BLOCKS) || getLevel().dimensionType().piglinSafe())) {
+        if (hasRecipe() && (blockState.is(DSBlockTagProvider.HEAT_BLOCKS) || getLevel().dimensionType().piglinSafe())) {
             increaseBrewingProgress();
             setChanged(level, pos, state);
 
-            if(hasProgressFinished()) {
+            if (hasProgressFinished()) {
                 craftItem();
                 resetProgress();
             }
