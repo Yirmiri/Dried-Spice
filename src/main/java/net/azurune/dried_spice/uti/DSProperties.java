@@ -1,6 +1,6 @@
 package net.azurune.dried_spice.uti;
 
-import net.azurune.dried_spice.block.DecorativeDragonsBreathBlock;
+import net.azurune.dried_spice.block.drink.DecorativeDragonsBreathBlock;
 import net.azurune.dried_spice.block.SoulPepperBlock;
 import net.azurune.dried_spice.block.StoveBlock;
 import net.minecraft.world.effect.MobEffectInstance;

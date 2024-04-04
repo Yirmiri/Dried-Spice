@@ -1,5 +1,6 @@
-package net.azurune.dried_spice.block;
+package net.azurune.dried_spice.block.drink;
 
+import net.azurune.dried_spice.block.AbstractDrinkBlock;
 import net.azurune.dried_spice.datagen.DSItemTagProvider;
 import net.azurune.dried_spice.register.DSBlocks;
 import net.minecraft.core.BlockPos;

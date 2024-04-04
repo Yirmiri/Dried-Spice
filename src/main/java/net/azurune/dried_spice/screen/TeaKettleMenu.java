@@ -1,7 +1,7 @@
 package net.azurune.dried_spice.screen;
 
 import net.azurune.dried_spice.block.entity.TeaKettleBlockEntity;
-import net.azurune.dried_spice.screen.slot.TeaKettleCupSlot;
+import net.azurune.dried_spice.screen.slot.TeaKettleFuelSlot;
 import net.azurune.dried_spice.screen.slot.SimpleOutputSlot;
 import net.azurune.dried_spice.register.DSBlocks;
 import net.azurune.dried_spice.register.DSMenuTypes;
@@ -16,6 +16,15 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 public class TeaKettleMenu extends AbstractContainerMenu {
+    private static final int PLAYER_INVENTORY_ROW_COUNT = 3;
+    private static final int PLAYER_INVENTORY_COLUMN_COUNT = 9;
+    private static final int PLAYER_INVENTORY_SLOT_COUNT = PLAYER_INVENTORY_COLUMN_COUNT * PLAYER_INVENTORY_ROW_COUNT;
+    private static final int HOTBAR_SLOT_COUNT = 9;
+    private static final int VANILLA_FIRST_SLOT_INDEX = 0;
+    private static final int VANILLA_SLOT_COUNT = HOTBAR_SLOT_COUNT + PLAYER_INVENTORY_SLOT_COUNT;
+    private static final int INVENTORY_SLOT_COUNT = 6;
+    private static final int INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
+
     public final TeaKettleBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
@@ -40,7 +49,7 @@ public class TeaKettleMenu extends AbstractContainerMenu {
             this.addSlot(new TeaKettleIngredientSlot(itemHandler, 2, 36, 13));
             this.addSlot(new TeaKettleIngredientSlot(itemHandler, 3, 18, 31));
             this.addSlot(new TeaKettleIngredientSlot(itemHandler, 4, 36, 31));
-            this.addSlot(new TeaKettleCupSlot(itemHandler, 5, 27, 55));
+            this.addSlot(new TeaKettleFuelSlot(itemHandler, 5, 27, 55));
             this.addSlot(new SimpleOutputSlot(itemHandler, 0, 120, 35));
         });
     }
@@ -61,15 +70,6 @@ public class TeaKettleMenu extends AbstractContainerMenu {
 
         return maxProgress != 0 && progress != 0 ? progress * progressBarSize / maxProgress : 0;
     }
-
-    private static final int PLAYER_INVENTORY_ROW_COUNT = 3;
-    private static final int PLAYER_INVENTORY_COLUMN_COUNT = 9;
-    private static final int PLAYER_INVENTORY_SLOT_COUNT = PLAYER_INVENTORY_COLUMN_COUNT * PLAYER_INVENTORY_ROW_COUNT;
-    private static final int HOTBAR_SLOT_COUNT = 9;
-    private static final int VANILLA_FIRST_SLOT_INDEX = 0;
-    private static final int VANILLA_SLOT_COUNT = HOTBAR_SLOT_COUNT + PLAYER_INVENTORY_SLOT_COUNT;
-    private static final int INVENTORY_SLOT_COUNT = 6;
-    private static final int INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     @Override
     public ItemStack quickMoveStack(Player player, int index) {

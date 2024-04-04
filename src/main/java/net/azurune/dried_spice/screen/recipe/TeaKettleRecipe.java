@@ -43,7 +43,7 @@ public class TeaKettleRecipe implements Recipe<SimpleContainer> {
         List<ItemStack> inputs = new ArrayList<>();
         int i = 0;
 
-        for (int j = 0; j < INGREDIENTS; ++j) {
+        for (int j = 0; j < INGREDIENTS; j++) {
             ItemStack itemstack = inv.getItem(j);
             if (!itemstack.isEmpty()) {
                 ++i;

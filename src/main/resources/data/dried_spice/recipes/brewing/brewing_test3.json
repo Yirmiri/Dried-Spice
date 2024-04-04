@@ -5,13 +5,10 @@
       "item": "dried_spice:dried_tea_leaves"
     },
     {
-      "item": "minecraft:iron_nugget"
-    },
-    {
-      "item": "minecraft:sugar"
+      "item": "dried_spice:mud_cup_of_water"
     }
   ],
   "result": {
-    "item": "minecraft:dirt"
+    "item": "dried_spice:mud_cup_of_green_tea"
   }
 }

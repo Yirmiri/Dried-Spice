@@ -14,4 +14,8 @@ public class TeaKettleIngredientSlot extends SlotItemHandler {
     public boolean mayPlace(ItemStack stack) {
         return !(stack.getItem() instanceof TeaItem);
     }
+
+    public int getMaxStackSize() {
+        return 64;
+    }
 }

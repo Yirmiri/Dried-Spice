@@ -1,6 +1,11 @@
 package net.azurune.dried_spice.register;
 
 import net.azurune.dried_spice.block.*;
+import net.azurune.dried_spice.block.drink.DecorativeBottleBlock;
+import net.azurune.dried_spice.block.drink.DecorativeDragonsBreathBlock;
+import net.azurune.dried_spice.block.drink.DecorativeDrinkBlock;
+import net.azurune.dried_spice.block.drink.DecorativeThickDrinkBlock;
+import net.azurune.dried_spice.block.entity.TeaKettleBlockEntity;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
