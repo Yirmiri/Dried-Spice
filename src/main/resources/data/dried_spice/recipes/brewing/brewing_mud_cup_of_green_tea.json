@@ -1,0 +1,17 @@
+{
+  "type": "dried_tea:brewing",
+  "ingredients": [
+    {
+      "item": "dried_spice:dried_tea_leaves"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "dried_spice:mud_cup_of_water"
+    }
+  ],
+  "result": {
+    "item": "dried_spice:mud_cup_of_green_tea"
+  }
+}

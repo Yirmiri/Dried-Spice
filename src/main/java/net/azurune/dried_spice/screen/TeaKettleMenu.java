@@ -14,19 +14,18 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.items.SlotItemHandler;
 
 public class TeaKettleMenu extends AbstractContainerMenu {
     public final TeaKettleBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
-    public TeaKettleMenu(int containerId, Inventory inventory, FriendlyByteBuf byteBuf) {
-        this(containerId, inventory, inventory.player.level().getBlockEntity(byteBuf.readBlockPos()), new SimpleContainerData(6));
+    public TeaKettleMenu(int container, Inventory inventory, FriendlyByteBuf byteBuf) {
+        this(container, inventory, inventory.player.level().getBlockEntity(byteBuf.readBlockPos()), new SimpleContainerData(6));
     }
 
-    public TeaKettleMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
-        super(DSMenuTypes.TEA_KETTLE_MENU.get(), pContainerId);
+    public TeaKettleMenu(int container, Inventory inv, BlockEntity entity, ContainerData data) {
+        super(DSMenuTypes.TEA_KETTLE_MENU.get(), container);
         checkContainerSize(inv, 6);
         blockEntity = ((TeaKettleBlockEntity) entity);
         this.level = inv.player.level();
