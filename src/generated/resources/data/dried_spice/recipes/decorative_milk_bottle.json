@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "dried_spice:decorative_bottle"
+    },
+    "@": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "dried_spice:decorative_milk_bottle"
+  },
+  "show_notification": true
+}

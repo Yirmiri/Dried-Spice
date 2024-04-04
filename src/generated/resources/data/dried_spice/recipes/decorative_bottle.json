@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    " # ",
+    "# #",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "dried_spice:decorative_bottle"
+  },
+  "show_notification": true
+}

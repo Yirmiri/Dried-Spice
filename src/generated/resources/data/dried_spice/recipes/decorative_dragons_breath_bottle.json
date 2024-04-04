@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "dried_spice:decorative_bottle"
+    },
+    "@": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "dried_spice:decorative_dragons_breath_bottle"
+  },
+  "show_notification": true
+}

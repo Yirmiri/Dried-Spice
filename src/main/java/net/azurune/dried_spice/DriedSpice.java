@@ -69,6 +69,11 @@ public class DriedSpice {
             event.accept(DSBlocks.STOVE);
             event.accept(DSBlocks.COPPER_TEA_KETTLE);
             event.accept(DSBlocks.AZALEA_FLOWER);
+            event.accept(DSBlocks.DECORATIVE_BOTTLE);
+            event.accept(DSBlocks.DECORATIVE_WATER_BOTTLE);
+            event.accept(DSBlocks.DECORATIVE_HONEY_BOTTLE);
+            event.accept(DSBlocks.DECORATIVE_MILK_BOTTLE);
+            event.accept(DSBlocks.DECORATIVE_DRAGONS_BREATH_BOTTLE);
 
             event.accept(DSItems.TEA_LEAVES);
             event.accept(DSItems.DRIED_TEA_LEAVES);

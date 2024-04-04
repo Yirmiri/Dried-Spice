@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "dried_spice:decorative_bottle"
+    },
+    "@": {
+      "item": "minecraft:honey_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "dried_spice:decorative_honey_bottle"
+  },
+  "show_notification": true
+}

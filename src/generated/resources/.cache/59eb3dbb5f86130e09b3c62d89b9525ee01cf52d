@@ -1,6 +1,11 @@
-// 1.20.1	2024-04-01T21:13:27.1328923	Loot Tables
+// 1.20.1	2024-04-03T21:30:24.704335	Loot Tables
 e7248d0b41a0beb292e4576ee71e22806807caa0 data/dried_spice/loot_tables/blocks/azalea_flower.json
 85e9fb7c009a228e2751e6d0e3bdb76101d0dd7d data/dried_spice/loot_tables/blocks/copper_tea_kettle.json
+30085485d2ee4f40d3ec30556a05de3bce6b0257 data/dried_spice/loot_tables/blocks/decorative_bottle.json
+ffc4c665bcb10439edb464afc5d8656756a5bc76 data/dried_spice/loot_tables/blocks/decorative_dragons_breath_bottle.json
+7148585ebeb15eb355cbe60c2af1e040fdffb91e data/dried_spice/loot_tables/blocks/decorative_honey_bottle.json
+b7b89493ac4c7a5e1ecbf30ef44a852a23bdaf69 data/dried_spice/loot_tables/blocks/decorative_milk_bottle.json
+8cee410d3afd14f1330192be40522d045e18be7f data/dried_spice/loot_tables/blocks/decorative_water_bottle.json
 57e2c8f1c5338055381f91c86e62ad4117c6a5dc data/dried_spice/loot_tables/blocks/iron_tea_kettle.json
 6b72bd82c339ef62664de4399ac92b0c8b4caf67 data/dried_spice/loot_tables/blocks/pepper_crop.json
 cfd45dedb7f92f51ad0b2667538c4754860aeb98 data/dried_spice/loot_tables/blocks/soul_pepper_crop.json
