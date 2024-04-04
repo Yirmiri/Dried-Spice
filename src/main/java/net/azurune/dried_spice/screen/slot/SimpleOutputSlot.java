@@ -1,4 +1,4 @@
-package net.azurune.dried_spice.other.screen.slot;
+package net.azurune.dried_spice.screen.slot;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;

@@ -1,8 +1,8 @@
-package net.azurune.dried_spice.other.screen;
+package net.azurune.dried_spice.screen;
 
 import net.azurune.dried_spice.block.entity.TeaKettleBlockEntity;
-import net.azurune.dried_spice.other.screen.slot.TeaKettleCupSlot;
-import net.azurune.dried_spice.other.screen.slot.SimpleOutputSlot;
+import net.azurune.dried_spice.screen.slot.TeaKettleCupSlot;
+import net.azurune.dried_spice.screen.slot.SimpleOutputSlot;
 import net.azurune.dried_spice.register.DSBlocks;
 import net.azurune.dried_spice.register.DSMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;

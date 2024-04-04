@@ -13,7 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.azurune.dried_spice.DriedSpice;
-import net.azurune.dried_spice.other.DSProperties;
+import net.azurune.dried_spice.uti.DSProperties;
 
 import java.util.function.Supplier;
 

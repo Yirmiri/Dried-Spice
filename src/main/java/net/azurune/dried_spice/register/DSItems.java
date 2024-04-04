@@ -1,6 +1,6 @@
 package net.azurune.dried_spice.register;
 
-import net.azurune.dried_spice.other.DSProperties;
+import net.azurune.dried_spice.uti.DSProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

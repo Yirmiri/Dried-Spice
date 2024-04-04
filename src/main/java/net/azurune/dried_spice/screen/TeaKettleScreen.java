@@ -1,4 +1,4 @@
-package net.azurune.dried_spice.other.screen;
+package net.azurune.dried_spice.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.azurune.dried_spice.DriedSpice;

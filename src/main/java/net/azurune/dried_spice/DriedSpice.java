@@ -3,7 +3,7 @@ package net.azurune.dried_spice;
 import net.azurune.dried_spice.compat.DSCompatRegistries;
 import net.azurune.dried_spice.compat.ExcessiveBuildingCompat;
 import net.azurune.dried_spice.datagen.loot.DSLootTableModifier;
-import net.azurune.dried_spice.other.screen.TeaKettleScreen;
+import net.azurune.dried_spice.screen.TeaKettleScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;

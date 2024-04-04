@@ -1,4 +1,4 @@
-package net.azurune.dried_spice.other.recipe;
+package net.azurune.dried_spice.screen.recipe;
 
 import com.google.gson.JsonParseException;
 import net.azurune.dried_spice.register.DSRecipeSerializers;

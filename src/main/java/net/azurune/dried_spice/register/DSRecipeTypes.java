@@ -1,7 +1,7 @@
 package net.azurune.dried_spice.register;
 
 import net.azurune.dried_spice.DriedSpice;
-import net.azurune.dried_spice.other.recipe.TeaKettleRecipe;
+import net.azurune.dried_spice.screen.recipe.TeaKettleRecipe;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.registries.DeferredRegister;

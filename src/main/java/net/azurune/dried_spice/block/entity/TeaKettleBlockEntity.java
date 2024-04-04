@@ -1,11 +1,11 @@
 package net.azurune.dried_spice.block.entity;
 
 import net.azurune.dried_spice.datagen.DSBlockTagProvider;
-import net.azurune.dried_spice.other.screen.TeaKettleMenu;
+import net.azurune.dried_spice.screen.TeaKettleMenu;
 import net.azurune.dried_spice.register.DSRecipeTypes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import net.azurune.dried_spice.other.recipe.TeaKettleRecipe;
+import net.azurune.dried_spice.screen.recipe.TeaKettleRecipe;
 import net.azurune.dried_spice.register.DSBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

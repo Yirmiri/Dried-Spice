@@ -1,7 +1,7 @@
 package net.azurune.dried_spice.register;
 
 import net.azurune.dried_spice.DriedSpice;
-import net.azurune.dried_spice.other.screen.TeaKettleMenu;
+import net.azurune.dried_spice.screen.TeaKettleMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;

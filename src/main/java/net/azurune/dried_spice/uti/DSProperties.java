@@ -1,4 +1,4 @@
-package net.azurune.dried_spice.other;
+package net.azurune.dried_spice.uti;
 
 import net.azurune.dried_spice.block.SoulPepperBlock;
 import net.azurune.dried_spice.block.StoveBlock;
