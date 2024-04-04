@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "decorative_bottles=1": {
+      "model": "dried_spice:block/decorative_bottle_one_decorative_bottle"
+    },
+    "decorative_bottles=2": {
+      "model": "dried_spice:block/decorative_bottle_two_decorative_bottles"
+    },
+    "decorative_bottles=3": {
+      "model": "dried_spice:block/decorative_bottle_three_decorative_bottles"
+    },
+    "decorative_bottles=4": {
+      "model": "dried_spice:block/decorative_bottle_four_decorative_bottles"
+    }
+  }
+}

@@ -26,11 +26,7 @@ public class DSDataGenerators {
         //generator.addProvider(event.includeClient(), new DSItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), DSLootTableProvider.create(packOutput));
         generator.addProvider(event.includeServer(), new DSGlobalLootModifierProviders(packOutput));
-
-        DSBlockTagProvider blockTagGenerator = generator.addProvider(event.includeServer(),
-                new DSBlockTagProvider(packOutput, lookupProvider, existingFileHelper));
-
-        //generator.addProvider(event.includeServer(),
-                //new DSItemTagProvider(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+        DSBlockTagProvider blockTagGenerator = generator.addProvider(event.includeServer(), new DSBlockTagProvider(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeServer(), new DSItemTagProvider(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
     }
 }

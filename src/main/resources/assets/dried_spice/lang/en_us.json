@@ -4,6 +4,11 @@
   "block.dried_spice.stove": "Stove",
   "block.dried_spice.tea_kettle": "Tea Kettle",
   "block.dried_spice.azalea_flower": "Azalea Flower",
+  "block.dried_spice.decorative_bottle": "Decorative Bottle",
+  "block.dried_spice.decorative_water_bottle": "Decorative Water Bottle",
+  "block.dried_spice.decorative_honey_bottle": "Decorative Honey Bottle",
+  "block.dried_spice.decorative_milk_bottle": "Decorative Milk Bottle",
+  "block.dried_spice.decorative_dragons_breath_bottle": "Decorative Dragon's Breath Bottle",
 
   "item.dried_spice.pepper": "Pepper",
   "item.dried_spice.soul_pepper": "Ghost Pepper",

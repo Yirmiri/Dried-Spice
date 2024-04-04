@@ -54,6 +54,12 @@ public class DriedSpice {
         ItemBlockRenderTypes.setRenderLayer(DSBlocks.AZALEA_FLOWER.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DSBlocks.PEPPER_CROP.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DSBlocks.SOUL_PEPPER_CROP.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DSBlocks.DECORATIVE_BOTTLE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DSBlocks.DECORATIVE_WATER_BOTTLE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DSBlocks.DECORATIVE_HONEY_BOTTLE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DSBlocks.DECORATIVE_DRAGONS_BREATH_BOTTLE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DSBlocks.DECORATIVE_MILK_BOTTLE.get(), RenderType.cutout());
+
 
         MenuScreens.register(DSMenuTypes.TEA_KETTLE_MENU.get(), TeaKettleScreen::new);
     }

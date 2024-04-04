@@ -1,9 +1,6 @@
 package net.azurune.dried_spice.register;
 
-import net.azurune.dried_spice.block.PepperBlock;
-import net.azurune.dried_spice.block.SoulPepperBlock;
-import net.azurune.dried_spice.block.StoveBlock;
-import net.azurune.dried_spice.block.TeaKettleBlock;
+import net.azurune.dried_spice.block.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -29,6 +26,13 @@ public class DSBlocks {
     public static final RegistryObject<Block> AZALEA_FLOWER = register("azalea_flower", () -> new GlowLichenBlock(DSProperties.BlockProperties.AZALEA_FLOWER));
     public static final RegistryObject<Block> PEPPER_CROP = register("pepper_crop", () -> new PepperBlock(DSProperties.BlockProperties.PEPPER_PLANT));
     public static final RegistryObject<Block> SOUL_PEPPER_CROP = register("soul_pepper_crop", () -> new SoulPepperBlock(DSProperties.BlockProperties.SOUL_PEPPER_PLANT));
+
+    //DRINK BLOCKS
+    public static final RegistryObject<Block> DECORATIVE_BOTTLE = register("decorative_bottle", () -> new DecorativeBottleBlock(DSProperties.BlockProperties.DECORATIVE_BOTTLE));
+    public static final RegistryObject<Block> DECORATIVE_WATER_BOTTLE = register("decorative_water_bottle", () -> new DecorativeDrinkBlock(DSProperties.BlockProperties.DECORATIVE_BOTTLE));
+    public static final RegistryObject<Block> DECORATIVE_HONEY_BOTTLE = register("decorative_honey_bottle", () -> new DecorativeThickDrinkBlock(DSProperties.BlockProperties.DECORATIVE_BOTTLE));
+    public static final RegistryObject<Block> DECORATIVE_DRAGONS_BREATH_BOTTLE = register("decorative_dragons_breath_bottle", () -> new DecorativeDragonsBreathBlock(DSProperties.BlockProperties.GLOWING_DECORATIVE_BOTTLE));
+    public static final RegistryObject<Block> DECORATIVE_MILK_BOTTLE = register("decorative_milk_bottle", () -> new DecorativeThickDrinkBlock(DSProperties.BlockProperties.DECORATIVE_BOTTLE));
 
     public static <B extends Block>RegistryObject<B> register(String name, Supplier<B> block) {
         RegistryObject<B> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,8 @@
+{
+  "parent": "dried_spice:template/template_decorative_bottle",
+  "textures": {
+    "particle": "minecraft:block/glass",
+    "0": "dried_spice:block/decorative_bottle",
+    "1": "dried_spice:block/potion_water"
+  }
+}

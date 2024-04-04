@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "decorative_bottles=1,drank=0": { "model": "dried_spice:block/decorative_dragons_breath_bottle_one_decorative_dragons_breath_bottle" },
+    "decorative_bottles=2,drank=0": { "model": "dried_spice:block/decorative_dragons_breath_bottle_two_decorative_dragons_breath_bottles" },
+    "decorative_bottles=3,drank=0": { "model": "dried_spice:block/decorative_dragons_breath_bottle_three_decorative_dragons_breath_bottles" },
+    "decorative_bottles=4,drank=0": { "model": "dried_spice:block/decorative_dragons_breath_bottle_four_decorative_dragons_breath_bottles" }
+  }
+}

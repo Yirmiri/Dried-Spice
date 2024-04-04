@@ -42,6 +42,36 @@ public class DSRecipeProvider extends RecipeProvider implements IConditionBuilde
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DSItems.SOUL_PEPPER_SEEDS.get(), 2).requires(DSItems.SOUL_PEPPER.get())
                 .unlockedBy(getHasName(DSItems.SOUL_PEPPER.get()), has(DSItems.SOUL_PEPPER.get())).save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSBlocks.DECORATIVE_BOTTLE.get(), 4)
+                .define('#', Items.GLASS)
+                .pattern(" # ")
+                .pattern("# #")
+                .pattern("###").unlockedBy(getHasName(Items.GLASS), has(Items.GLASS)).save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSBlocks.DECORATIVE_WATER_BOTTLE.get(), 8)
+                .define('#', DSBlocks.DECORATIVE_BOTTLE.get()).define('@', Items.WATER_BUCKET)
+                .pattern("###")
+                .pattern("#@#")
+                .pattern("###").unlockedBy(getHasName(DSBlocks.DECORATIVE_BOTTLE.get()), has(DSBlocks.DECORATIVE_BOTTLE.get())).save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSBlocks.DECORATIVE_DRAGONS_BREATH_BOTTLE.get(), 8)
+                .define('#', DSBlocks.DECORATIVE_BOTTLE.get()).define('@', Items.DRAGON_BREATH)
+                .pattern("###")
+                .pattern("#@#")
+                .pattern("###").unlockedBy(getHasName(DSBlocks.DECORATIVE_BOTTLE.get()), has(DSBlocks.DECORATIVE_BOTTLE.get())).save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSBlocks.DECORATIVE_HONEY_BOTTLE.get(), 8)
+                .define('#', DSBlocks.DECORATIVE_BOTTLE.get()).define('@', Items.HONEY_BLOCK)
+                .pattern("###")
+                .pattern("#@#")
+                .pattern("###").unlockedBy(getHasName(DSBlocks.DECORATIVE_BOTTLE.get()), has(DSBlocks.DECORATIVE_BOTTLE.get())).save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSBlocks.DECORATIVE_MILK_BOTTLE.get(), 8)
+                .define('#', DSBlocks.DECORATIVE_BOTTLE.get()).define('@', Items.MILK_BUCKET)
+                .pattern("###")
+                .pattern("#@#")
+                .pattern("###").unlockedBy(getHasName(DSBlocks.DECORATIVE_BOTTLE.get()), has(DSBlocks.DECORATIVE_BOTTLE.get())).save(output);
     }
 
     protected static RecipeBuilder fourforfourBuilder(ItemLike itemLike, Ingredient ingredient) {
