@@ -16,9 +16,17 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.azurune.dried_spice.register.*;
 
+import java.util.List;
+
 @Mod(DriedSpice.MODID)
 public class DriedSpice {
     public static final String MODID = "dried_spice";
+
+    //Capes For devs, contributors, and supporters of Excessive Building
+    public static final List<String> AZURUNE = List.of("Dev", "Yirmiri", "Nullmiri"); //Developers
+    public static final List<String> COTTON_CANDY = List.of("Milkyfur"); //Artist
+    public static final List<String> HEX = List.of("BackupCup"); //...one line caused so much chaos
+    public static final List<String> SUPPORTERS = List.of(); //Supporters
 
     public DriedSpice() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
