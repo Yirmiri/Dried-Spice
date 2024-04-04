@@ -38,5 +38,9 @@ public class DSProperties {
         public static final FoodProperties TEA_LEAVES = new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).fast().build();
         public static final FoodProperties PEPPER = new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0), 1.0F).alwaysEat().fast().build();
         public static final FoodProperties SOUL_PEPPER = new FoodProperties.Builder().nutrition(4).saturationMod(0.2f).effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 300, 0), 1.0F).alwaysEat().fast().build();
+
+        //TEAS
+        public static final FoodProperties WATER = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties GREEN_TEA = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.REGENERATION, 200, 0), 1.0F).alwaysEat().build();
     }
 }

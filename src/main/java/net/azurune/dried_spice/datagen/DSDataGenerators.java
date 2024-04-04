@@ -23,7 +23,7 @@ public class DSDataGenerators {
 
         generator.addProvider(event.includeServer(), new DSRecipeProvider(packOutput));
         //generator.addProvider(event.includeClient(), new DSBlockStateProvider(packOutput, existingFileHelper));
-        //generator.addProvider(event.includeClient(), new DSItemModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new DSItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), DSLootTableProvider.create(packOutput));
         generator.addProvider(event.includeServer(), new DSGlobalLootModifierProviders(packOutput));
         DSBlockTagProvider blockTagGenerator = generator.addProvider(event.includeServer(), new DSBlockTagProvider(packOutput, lookupProvider, existingFileHelper));

@@ -5,13 +5,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class TeaKettleCupSlot extends SlotItemHandler {
-    public TeaKettleCupSlot(IItemHandler itemHandler, int index, int x, int y) {
+public class TeaKettleIngredientSlot extends SlotItemHandler {
+    public TeaKettleIngredientSlot(IItemHandler itemHandler, int index, int x, int y) {
         super(itemHandler, index, x, y);
     }
-
+//actually just the lazy way of doing recipes
     @Override
     public boolean mayPlace(ItemStack stack) {
-        return stack.getItem() instanceof TeaItem;
+        return !(stack.getItem() instanceof TeaItem);
     }
 }

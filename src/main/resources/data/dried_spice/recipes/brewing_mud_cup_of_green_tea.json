@@ -1,0 +1,14 @@
+{
+  "type": "dried_spice:brewing",
+  "ingredients": [
+    {
+      "item": "dried_tea:dried_tea_leaves"
+    },
+    {
+      "item": "dried_tea:mud_cup_of_water"
+    }
+  ],
+  "result": {
+    "item": "dried_spice:mud_cup_of_green_tea"
+  }
+}

@@ -5,6 +5,7 @@ import net.azurune.dried_spice.screen.slot.TeaKettleCupSlot;
 import net.azurune.dried_spice.screen.slot.SimpleOutputSlot;
 import net.azurune.dried_spice.register.DSBlocks;
 import net.azurune.dried_spice.register.DSMenuTypes;
+import net.azurune.dried_spice.screen.slot.TeaKettleIngredientSlot;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -36,10 +37,10 @@ public class TeaKettleMenu extends AbstractContainerMenu {
         addDataSlots(data);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
-            this.addSlot(new SlotItemHandler(itemHandler, 1, 18, 13));
-            this.addSlot(new SlotItemHandler(itemHandler, 2, 36, 13));
-            this.addSlot(new SlotItemHandler(itemHandler, 3, 18, 31));
-            this.addSlot(new SlotItemHandler(itemHandler, 4, 36, 31));
+            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 1, 18, 13));
+            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 2, 36, 13));
+            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 3, 18, 31));
+            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 4, 36, 31));
             this.addSlot(new TeaKettleCupSlot(itemHandler, 5, 27, 55));
             this.addSlot(new SimpleOutputSlot(itemHandler, 0, 120, 35));
         });

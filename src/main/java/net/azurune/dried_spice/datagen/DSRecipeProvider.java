@@ -72,6 +72,11 @@ public class DSRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .pattern("###")
                 .pattern("#@#")
                 .pattern("###").unlockedBy(getHasName(DSBlocks.DECORATIVE_BOTTLE.get()), has(DSBlocks.DECORATIVE_BOTTLE.get())).save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, DSItems.MUD_CUP.get(), 3)
+                .define('#', Blocks.PACKED_MUD)
+                .pattern("# #")
+                .pattern(" # ").unlockedBy(getHasName(Blocks.PACKED_MUD), has(Blocks.PACKED_MUD)).save(output);
     }
 
     protected static RecipeBuilder fourforfourBuilder(ItemLike itemLike, Ingredient ingredient) {
