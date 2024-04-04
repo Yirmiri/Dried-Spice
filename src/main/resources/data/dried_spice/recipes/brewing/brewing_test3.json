@@ -2,7 +2,7 @@
   "type": "dried_spice:brewing",
   "ingredients": [
     {
-      "item": "minecraft:apple"
+      "item": "dried_spice:dried_tea_leaves"
     },
     {
       "item": "minecraft:iron_nugget"
