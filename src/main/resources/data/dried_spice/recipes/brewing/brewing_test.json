@@ -2,6 +2,9 @@
   "type": "dried_spice:brewing",
   "ingredients": [
     {
+      "item": "dried_spice:mud_cup_of_water"
+    },
+    {
       "item": "minecraft:apple"
     },
     {
@@ -9,6 +12,9 @@
     },
     {
       "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:iron_ingot"
     }
   ],
   "result": {

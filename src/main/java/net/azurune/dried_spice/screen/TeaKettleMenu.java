@@ -45,11 +45,11 @@ public class TeaKettleMenu extends AbstractContainerMenu {
         addDataSlots(data);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
-            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 1, 18, 13));
-            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 2, 36, 13));
-            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 3, 18, 31));
-            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 4, 36, 31));
-            this.addSlot(new TeaKettleFuelSlot(itemHandler, 5, 27, 55));
+            this.addSlot(new TeaKettleFuelSlot(itemHandler, 1, 27, 55));
+            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 2, 18, 13));
+            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 3, 36, 13));
+            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 4, 18, 31));
+            this.addSlot(new TeaKettleIngredientSlot(itemHandler, 5, 36, 31));
             this.addSlot(new SimpleOutputSlot(itemHandler, 0, 120, 35));
         });
     }

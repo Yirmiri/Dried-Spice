@@ -49,15 +49,15 @@ import net.minecraftforge.items.ItemStackHandler;
 import java.util.Optional;
 
 public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
-    private static final int INPUT_SLOT_1 = 1;
-    private static final int INPUT_SLOT_2 = 2;
-    private static final int INPUT_SLOT_3 = 3;
-    private static final int INPUT_SLOT_4 = 4;
-    private static final int CUP_SLOT = 5;
-    private static final int OUTPUT_SLOT = 0;
-    protected final ContainerData data;
     private int brewProgress = 0;
     private int maxBrewProgress = 200;
+    protected final ContainerData data;
+    private static final int CUP_SLOT = 1;
+    private static final int INPUT_SLOT_1 = 2;
+    private static final int INPUT_SLOT_2 = 3;
+    private static final int INPUT_SLOT_3 = 4;
+    private static final int INPUT_SLOT_4 = 5;
+    private static final int OUTPUT_SLOT = 0;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
     private final ItemStackHandler itemHandler = new ItemStackHandler(6) {
@@ -150,18 +150,16 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
 
     public void tick(Level level, BlockPos pos, BlockState state) {
         BlockState blockState = level.getBlockState(pos.below());
-        if(hasRecipe()) {
-            if (blockState.is(DSBlockTagProvider.HEAT_BLOCKS)) {
-                increaseBrewingProgress();
-                setChanged(level, pos, state);
+        if(hasRecipe() && (blockState.is(DSBlockTagProvider.HEAT_BLOCKS))) {
+            increaseBrewingProgress();
+            setChanged(level, pos, state);
 
-                if (hasProgressFinished()) {
-                    craftItem();
-                    resetProgress();
-                }
-            } else {
+            if(hasProgressFinished()) {
+                craftItem();
                 resetProgress();
             }
+        } else {
+            resetProgress();
         }
     }
 
