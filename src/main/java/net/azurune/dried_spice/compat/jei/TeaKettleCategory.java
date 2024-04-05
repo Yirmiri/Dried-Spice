@@ -18,6 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.ParametersAreNonnullByDefault;
+import java.util.Arrays;
 
 @ParametersAreNonnullByDefault @MethodsReturnNonnullByDefault
 public class TeaKettleCategory implements IRecipeCategory<TeaKettleRecipe> {
@@ -54,11 +55,22 @@ public class TeaKettleCategory implements IRecipeCategory<TeaKettleRecipe> {
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, @NotNull TeaKettleRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 27, 55).addIngredients(recipe.getIngredients().get(0));
-        builder.addSlot(RecipeIngredientRole.INPUT, 18, 13).addIngredients(recipe.getIngredients().get(1));
-        builder.addSlot(RecipeIngredientRole.INPUT, 36, 13).addIngredients(recipe.getIngredients().get(2));
-        builder.addSlot(RecipeIngredientRole.INPUT, 18, 31).addIngredients(recipe.getIngredients().get(3));
-        builder.addSlot(RecipeIngredientRole.INPUT, 36, 31).addIngredients(recipe.getIngredients().get(4));
+        int borderSlotSize = 18;
+        for (int row = 0; row < 2; ++row) {
+            for (int column = 0; column < 3; ++column) {
+                int inputIndex = row * 3 + column;
+                if (inputIndex < recipe.getIngredients().size()) {
+                    builder.addSlot(RecipeIngredientRole.INPUT, (column * borderSlotSize) + 1, (row * borderSlotSize) + 1)
+                            .addItemStacks(Arrays.asList(recipe.getIngredients().get(inputIndex).getItems()));
+                }
+            }
+        }
+
+        //builder.addSlot(RecipeIngredientRole.INPUT, 27, 55).addIngredients(recipe.getIngredients().get(0));
+        //builder.addSlot(RecipeIngredientRole.INPUT, 18, 13).addIngredients(recipe.getIngredients().get(1));
+        //builder.addSlot(RecipeIngredientRole.INPUT, 36, 13).addIngredients(recipe.getIngredients().get(2));
+        //builder.addSlot(RecipeIngredientRole.INPUT, 18, 31).addIngredients(recipe.getIngredients().get(3));
+        //builder.addSlot(RecipeIngredientRole.INPUT, 36, 31).addIngredients(recipe.getIngredients().get(4));
         builder.addSlot(RecipeIngredientRole.OUTPUT, 120, 35).addItemStack(recipe.getResultItem(null));
     }
 }
