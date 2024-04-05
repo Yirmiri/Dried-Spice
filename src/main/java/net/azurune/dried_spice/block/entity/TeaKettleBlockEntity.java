@@ -1,22 +1,8 @@
 package net.azurune.dried_spice.block.entity;
 
-import net.azurune.dried_spice.block.AbstractDrinkBlock;
 import net.azurune.dried_spice.datagen.DSBlockTagProvider;
-import net.azurune.dried_spice.register.DSBlocks;
 import net.azurune.dried_spice.screen.TeaKettleMenu;
 import net.azurune.dried_spice.register.DSRecipeTypes;
-import net.azurune.dried_spice.uti.DSStates;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.material.Fluids;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import net.azurune.dried_spice.screen.recipe.TeaKettleRecipe;
@@ -52,12 +38,12 @@ public class TeaKettleBlockEntity extends BlockEntity implements MenuProvider {
     private int brewProgress = 0;
     private int maxBrewProgress = 200;
     protected final ContainerData data;
-    private static final int CUP_SLOT = 1;
-    private static final int INPUT_SLOT_1 = 2;
-    private static final int INPUT_SLOT_2 = 3;
-    private static final int INPUT_SLOT_3 = 4;
-    private static final int INPUT_SLOT_4 = 5;
-    private static final int OUTPUT_SLOT = 0;
+    private static final int CUP_SLOT = 0;
+    private static final int INPUT_SLOT_1 = 1;
+    private static final int INPUT_SLOT_2 = 2;
+    private static final int INPUT_SLOT_3 = 3;
+    private static final int INPUT_SLOT_4 = 4;
+    private static final int OUTPUT_SLOT = 5;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
     private final ItemStackHandler itemHandler = new ItemStackHandler(6) {

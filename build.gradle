@@ -68,6 +68,7 @@ repositories {
     maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
     maven { url "https://www.cursemaven.com" }
     maven { url "https://modmaven.k-4u.nl" }
+    maven { url = "https://maven.blamejared.com/" }
 }
 
 dependencies {
