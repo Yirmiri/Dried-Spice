@@ -6,6 +6,15 @@
     },
     {
       "item": "dried_spice:dried_tea_leaves"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
     }
   ],
   "result": {
