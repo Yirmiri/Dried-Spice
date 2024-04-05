@@ -90,6 +90,8 @@ public class DriedSpice {
         if (event.getTab() == DSItemGroups.DRIED_SPICE_TAB.get() && (DSCompatRegistries.excessive_building)) {
             event.accept(ExcessiveBuildingCompat.SOUL_STOVE);
 
+            event.accept(ExcessiveBuildingCompat.MUD_CUP_OF_ANCIENT_TEA);
+
             event.accept(ExcessiveBuildingCompat.ANCIENT_TEA_LEAVES);
             event.accept(ExcessiveBuildingCompat.ANCIENT_DRIED_TEA_LEAVES);
         }

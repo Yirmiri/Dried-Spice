@@ -1,6 +1,7 @@
 package net.azurune.dried_spice.compat;
 
 import net.azurune.dried_spice.block.StoveBlock;
+import net.azurune.dried_spice.item.TeaItem;
 import net.azurune.dried_spice.uti.DSProperties;
 import net.azurune.dried_spice.register.DSBlocks;
 import net.azurune.dried_spice.register.DSItems;
@@ -17,6 +18,9 @@ public class ExcessiveBuildingCompat {
     //ITEMS
     public static final RegistryObject<Item> ANCIENT_TEA_LEAVES = DSItems.ITEMS.register("ancient_tea_leaves", () -> new Item(new Item.Properties().food(DSProperties.Foods.TEA_LEAVES)));
     public static final RegistryObject<Item> ANCIENT_DRIED_TEA_LEAVES = DSItems.ITEMS.register("ancient_dried_tea_leaves", () -> new Item(new Item.Properties().food(DSProperties.Foods.TEA_LEAVES)));
+
+    //TEAS
+    public static final RegistryObject<Item> MUD_CUP_OF_ANCIENT_TEA = DSItems.ITEMS.register("mud_cup_of_ancient_tea", () -> new TeaItem(new Item.Properties().food(DSProperties.Foods.ANCIENT_TEA).stacksTo(8), 32));
 
     public static void register(IEventBus eventBus) {
     }

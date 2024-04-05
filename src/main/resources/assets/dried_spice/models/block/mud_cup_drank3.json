@@ -1,0 +1,9 @@
+{
+  "parent": "dried_spice:template/template_cup_drank3",
+  "textures": {
+    "particle": "minecraft:block/packed_mud",
+    "1": "dried_spice:block/mud_cup",
+    "2": "dried_spice:block/potion_air"
+  },
+  "render_type": "cutout"
+}

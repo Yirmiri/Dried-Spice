@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north, cupdrank1": {
+      "model": "dried_spice:block/mud_cup_drank1"
+    },
+    "facing=east, cupdrank1": {
+      "model": "dried_spice:block/mud_cup_drank1",
+      "y": 90
+    },
+    "facing=south, cupdrank1": {
+      "model": "dried_spice:block/mud_cup_drank1",
+      "y": 180
+    },
+    "facing=west, cupdrank1": {
+      "model": "dried_spice:block/mud_cup_drank1",
+      "y": 270
+    },
+    "facing=north, cupdrank2": {
+      "model": "dried_spice:block/mud_cup_drank2"
+    },
+    "facing=east, cupdrank2": {
+      "model": "dried_spice:block/mud_cup_drank2",
+      "y": 90
+    },
+    "facing=south, cupdrank2": {
+      "model": "dried_spice:block/mud_cup_drank2",
+      "y": 180
+    },
+    "facing=west, cupdrank2": {
+      "model": "dried_spice:block/mud_cup_drank2",
+      "y": 270
+    },
+    "facing=north, cupdrank3": {
+      "model": "dried_spice:block/mud_cup_drank3"
+    },
+    "facing=east, cupdrank3": {
+      "model": "dried_spice:block/mud_cup_drank3",
+      "y": 90
+    },
+    "facing=south, cupdrank3": {
+      "model": "dried_spice:block/mud_cup_drank3",
+      "y": 180
+    },
+    "facing=west, cupdrank3": {
+      "model": "dried_spice:block/mud_cup_drank3",
+      "y": 270
+    },
+    "facing=north, cupdrank4": {
+      "model": "dried_spice:block/mud_cup"
+    },
+    "facing=east, cupdrank4": {
+      "model": "dried_spice:block/mud_cup",
+      "y": 90
+    },
+    "facing=south, cupdrank4": {
+      "model": "dried_spice:block/mud_cup",
+      "y": 180
+    },
+    "facing=west, cupdrank4": {
+      "model": "dried_spice:block/mud_cup",
+      "y": 270
+    }
+  }
+}

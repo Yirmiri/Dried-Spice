@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
+import net.yirmiri.excessive_building.potion.EBMobEffects;
 
 public class DSProperties {
 
@@ -42,5 +43,8 @@ public class DSProperties {
         //TEAS
         public static final FoodProperties WATER = new FoodProperties.Builder().alwaysEat().build();
         public static final FoodProperties GREEN_TEA = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.REGENERATION, 200, 0), 1.0F).alwaysEat().build();
+
+        //COMPAT
+        public static final FoodProperties ANCIENT_TEA = new FoodProperties.Builder().effect(new MobEffectInstance(EBMobEffects.REACHING.get(), 6000, 0), 1.0F).alwaysEat().build();
     }
 }

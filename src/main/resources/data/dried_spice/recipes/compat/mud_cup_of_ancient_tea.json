@@ -1,0 +1,17 @@
+{
+  "type": "dried_spice:brewing",
+  "ingredients": [
+    {
+      "item": "dried_spice:mud_cup_of_water"
+    },
+    {
+      "item": "dried_spice:ancient_dried_tea_leaves"
+    },
+    {
+      "item": "excessive_building:ancient_fruit"
+    }
+  ],
+  "result": {
+    "item": "dried_spice:mud_cup_of_ancient_tea"
+  }
+}
