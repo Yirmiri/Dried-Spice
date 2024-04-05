@@ -78,6 +78,8 @@ public class DriedSpice {
             event.accept(DSItems.MUD_CUP);
             event.accept(DSItems.MUD_CUP_OF_WATER);
             event.accept(DSItems.MUD_CUP_OF_GREEN_TEA);
+            event.accept(DSItems.MUD_CUP_OF_COFFEE);
+            event.accept(DSItems.MUD_CUP_OF_DARK_COFFEE);
 
             event.accept(DSItems.TEA_LEAVES);
             event.accept(DSItems.DRIED_TEA_LEAVES);

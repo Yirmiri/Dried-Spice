@@ -13,10 +13,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
-public class TeaItem extends Item {
+public class GenericDrinkItem extends Item {
     private final int speed;
 
-    public TeaItem(Properties properties, int speed) {
+    public GenericDrinkItem(Properties properties, int speed) {
         super(properties);
         this.speed = speed;
     }

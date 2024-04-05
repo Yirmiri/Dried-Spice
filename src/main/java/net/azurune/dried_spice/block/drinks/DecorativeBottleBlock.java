@@ -1,4 +1,4 @@
-package net.azurune.dried_spice.block.drink;
+package net.azurune.dried_spice.block.drinks;
 
 import net.azurune.dried_spice.block.AbstractDrinkBlock;
 import net.azurune.dried_spice.register.DSBlocks;

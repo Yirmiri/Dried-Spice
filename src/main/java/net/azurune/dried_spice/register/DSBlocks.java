@@ -1,10 +1,10 @@
 package net.azurune.dried_spice.register;
 
 import net.azurune.dried_spice.block.*;
-import net.azurune.dried_spice.block.drink.DecorativeBottleBlock;
-import net.azurune.dried_spice.block.drink.DecorativeDragonsBreathBlock;
-import net.azurune.dried_spice.block.drink.DecorativeDrinkBlock;
-import net.azurune.dried_spice.block.drink.DecorativeThickDrinkBlock;
+import net.azurune.dried_spice.block.drinks.DecorativeBottleBlock;
+import net.azurune.dried_spice.block.drinks.DecorativeDragonsBreathBlock;
+import net.azurune.dried_spice.block.drinks.DecorativeDrinkBlock;
+import net.azurune.dried_spice.block.drinks.DecorativeThickDrinkBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -20,7 +20,6 @@ import java.util.function.Supplier;
 
 public class DSBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DriedSpice.MODID);
-
     //MISC
     public static final RegistryObject<Block> COPPER_TEA_KETTLE = register("copper_tea_kettle", () -> new TeaKettleBlock(DSProperties.BlockProperties.COPPER_TEA_KETTLE));
     public static final RegistryObject<Block> IRON_TEA_KETTLE = register("iron_tea_kettle", () -> new TeaKettleBlock(DSProperties.BlockProperties.IRON_TEA_KETTLE));

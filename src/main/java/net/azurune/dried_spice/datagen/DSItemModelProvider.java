@@ -21,6 +21,8 @@ public class DSItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(DSItems.MUD_CUP_OF_GREEN_TEA);
         simpleItem(DSItems.MUD_CUP_OF_WATER);
+        simpleItem(DSItems.MUD_CUP_OF_COFFEE);
+        simpleItem(DSItems.MUD_CUP_OF_DARK_COFFEE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

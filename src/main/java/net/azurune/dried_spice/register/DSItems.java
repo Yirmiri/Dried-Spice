@@ -1,7 +1,10 @@
 package net.azurune.dried_spice.register;
 
 import net.azurune.dried_spice.item.CupItem;
-import net.azurune.dried_spice.item.TeaItem;
+import net.azurune.dried_spice.item.GenericDrinkItem;
+import net.azurune.dried_spice.item.drinks.CoffeeDrinkItem;
+import net.azurune.dried_spice.item.drinks.DarkCoffeeDrinkItem;
+import net.azurune.dried_spice.item.drinks.GreenTeaDrinkItem;
 import net.azurune.dried_spice.uti.DSProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -12,15 +15,16 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class DSItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DriedSpice.MODID);
-
     //INGREDIENTS
     public static final RegistryObject<Item> TEA_LEAVES = ITEMS.register("tea_leaves", () -> new Item(new Item.Properties().food(DSProperties.Foods.TEA_LEAVES)));
     public static final RegistryObject<Item> DRIED_TEA_LEAVES = ITEMS.register("dried_tea_leaves", () -> new Item(new Item.Properties().food(DSProperties.Foods.TEA_LEAVES)));
     public static final RegistryObject<Item> MUD_CUP = ITEMS.register("mud_cup", () -> new CupItem(new Item.Properties()));
 
-    //TEAS
-    public static final RegistryObject<Item> MUD_CUP_OF_WATER = ITEMS.register("mud_cup_of_water", () -> new TeaItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_GREEN_TEA = ITEMS.register("mud_cup_of_green_tea", () -> new TeaItem(new Item.Properties().food(DSProperties.Foods.GREEN_TEA).stacksTo(1), 32));
+    //DRINKS
+    public static final RegistryObject<Item> MUD_CUP_OF_WATER = ITEMS.register("mud_cup_of_water", () -> new GenericDrinkItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_GREEN_TEA = ITEMS.register("mud_cup_of_green_tea", () -> new GreenTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.GREEN_TEA).stacksTo(2), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_COFFEE = ITEMS.register("mud_cup_of_coffee", () -> new CoffeeDrinkItem(new Item.Properties().food(DSProperties.Foods.COFFEE).stacksTo(4), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_DARK_COFFEE = ITEMS.register("mud_cup_of_dark_coffee", () -> new DarkCoffeeDrinkItem(new Item.Properties().food(DSProperties.Foods.DARK_COFFEE).stacksTo(4), 32));
 
     //NATURAL
     public static final RegistryObject<Item> PEPPER_SEEDS = ITEMS.register("pepper_seeds", () -> new ItemNameBlockItem(DSBlocks.PEPPER_CROP.get(), new Item.Properties()));
