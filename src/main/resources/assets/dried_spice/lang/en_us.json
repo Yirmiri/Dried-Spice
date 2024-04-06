@@ -26,6 +26,9 @@
   "item.dried_spice.mud_cup_of_mango_tea": "Mud Cup of Mango Tea",
   "item.dried_spice.coffee_beans": "Coffee Beans",
 
+  "effect.dried_spice.vulnerability": "Vulnerability",
+  "effect.dried_spice.health_reduction": "Health Reduction",
+
   "desc.coffee.drink": "§7If you are reading this §6Yirmiri §7can be the one to blame for forgetting to add a description.",
   "desc.dark_coffee.drink": "§7Hello darkness my old friend.",
   "desc.green_tea.drink": "§7A sweet earthly brew that soothes the drinker.",
