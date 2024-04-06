@@ -2,7 +2,7 @@ package net.azurune.dried_spice.block.drinks;
 
 import net.azurune.dried_spice.block.AbstractDrinkBlock;
 import net.azurune.dried_spice.register.DSBlocks;
-import net.azurune.dried_spice.uti.DSStates;
+import net.azurune.dried_spice.util.DSStates;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

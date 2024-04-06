@@ -1,4 +1,4 @@
-package net.azurune.dried_spice.uti;
+package net.azurune.dried_spice.util;
 
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 

@@ -3,7 +3,7 @@ package net.azurune.dried_spice.register;
 import net.azurune.dried_spice.item.CupItem;
 import net.azurune.dried_spice.item.GenericDrinkItem;
 import net.azurune.dried_spice.item.drinks.*;
-import net.azurune.dried_spice.uti.DSProperties;
+import net.azurune.dried_spice.util.DSProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

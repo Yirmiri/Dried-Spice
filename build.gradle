@@ -9,7 +9,7 @@ plugins {
 mixin {
     add sourceSets.main, "dried_spice.refmap.json"
 
-    config "dried_spice.forge.mixins.json"
+    config "dried_spice.mixins.json"
 }
 
 version = mod_version

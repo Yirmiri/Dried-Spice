@@ -3,7 +3,7 @@ package net.azurune.dried_spice;
 import net.azurune.dried_spice.compat.DSCompatRegistries;
 import net.azurune.dried_spice.compat.ExcessiveBuildingCompat;
 import net.azurune.dried_spice.datagen.loot.DSLootTableModifier;
-import net.azurune.dried_spice.potion.DSMobEffects;
+import net.azurune.dried_spice.register.DSMobEffects;
 import net.azurune.dried_spice.screen.TeaKettleScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -33,6 +33,7 @@ public class DriedSpice {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
         DSRecipeTypes.RECIPE_TYPES.register(modEventBus);
+        DSMobEffects.MOB_EFFECTS.register(modEventBus);
 
         DSBlocks.register(modEventBus);
         DSItems.register(modEventBus);
@@ -42,7 +43,6 @@ public class DriedSpice {
         DSLootTableModifier.register(modEventBus);
         DSCompatRegistries.register(modEventBus);
         DSRecipeSerializers.register(modEventBus);
-        DSMobEffects.register(modEventBus);
 
         modEventBus.addListener(this::onClientSetup);
         modEventBus.addListener(this::addCreative);

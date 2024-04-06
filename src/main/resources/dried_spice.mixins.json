@@ -4,6 +4,10 @@
   "package": "net.azurune.dried_spice.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "EntityCollisionContextMixin",
+    "EntityMixin",
+    "LivingEntityMixin",
+    "MobEffectInstanceMixin"
   ],
   "client": [
     "AbstractClientPlayerMixin"

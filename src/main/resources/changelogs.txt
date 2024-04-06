@@ -10,7 +10,7 @@ Release Update
   Additions
 •   Added the tea kettle, a new crafting station which most tea making will take place
 •   Added a bunch of new drinks each with their own effects!
-•   Added new potion effects, most exclusive to the new drinks
+•   Added tons of new potion effects, most exclusive to the new drinks (thanks to Zeus for creating some of them :P)
 •   Added new ingredients such as tea leaves, azalea flowers, and more!
 •   Added peppers, can be obtained from piglin bartering or bastions and grants short fire resistance, mainly used as an ingredient and can be planted
 •   Added stoves, a simple building block to heat up tea kettles (has compat with Excessive Building's soul blocks)

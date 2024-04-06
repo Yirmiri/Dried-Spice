@@ -1,6 +1,6 @@
 package net.azurune.dried_spice.block;
 
-import net.azurune.dried_spice.uti.DSStates;
+import net.azurune.dried_spice.util.DSStates;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;

@@ -5,9 +5,9 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 
-public class VulnerabilityEffect extends MobEffect {
-    public VulnerabilityEffect(MobEffectCategory mobEffectCategory, int color) {
+public class DensityEffect extends MobEffect {
+    public DensityEffect(MobEffectCategory mobEffectCategory, int color) {
         super(mobEffectCategory, color);
-        this.addAttributeModifier(Attributes.ARMOR, "25A87ACE-6185-486B-842B-D3D6A05f071C", -2.0, AttributeModifier.Operation.ADDITION);
+        this.addAttributeModifier(Attributes.KNOCKBACK_RESISTANCE, "6C3A159B-905D-4EF8-BF87-BC4DADBE19AB", -1.0, AttributeModifier.Operation.ADDITION);
     }
 }
