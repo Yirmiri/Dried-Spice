@@ -1,7 +1,8 @@
-// 1.20.1	2024-04-01T21:13:27.1299008	Global Loot Modifiers : dried_spice
+// 1.20.1	2024-04-06T00:17:10.5065096	Global Loot Modifiers : dried_spice
 d73cf4768182a5db0b2d46466b5a959b89854181 data/dried_spice/loot_modifiers/ancient_tea_leaves_from_ancient.json
 d4345289403b9152865847416cc6904c534d285d data/dried_spice/loot_modifiers/azalea_flower_from_flowering_azalea.json
+4b2ce46d5f4cf0bc08fec46cf44e4f211b8af7ca data/dried_spice/loot_modifiers/mango_from_jungle_leaves.json
 ef08f2f276a068504879d0efd13a355bdd30679f data/dried_spice/loot_modifiers/pepper_from_bartering.json
 630591acbda6d3e770f2ade063d45937de7deee1 data/dried_spice/loot_modifiers/tea_leaves_from_azalea.json
 b8f377b09853894f7174ebf6307a4d74cacde1d5 data/dried_spice/loot_modifiers/tea_leaves_from_flowering_azalea.json
-e7c0879a4be5ab0b92570e10cee5e9e57ad024ac data/forge/loot_modifiers/global_loot_modifiers.json
+27c17dabfd13f144dacbdcb29574c4413ae6a07e data/forge/loot_modifiers/global_loot_modifiers.json

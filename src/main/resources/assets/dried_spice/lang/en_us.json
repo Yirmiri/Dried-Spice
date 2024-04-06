@@ -22,16 +22,21 @@
   "item.dried_spice.mud_cup_of_coffee": "Mud Cup of Coffee",
   "item.dried_spice.mud_cup_of_dark_coffee": "Mud Cup of Dark Coffee",
   "item.dried_spice.mud_cup_of_milk": "Mud Cup of Milk",
+  "item.dried_spice.mango": "Mango",
+  "item.dried_spice.mud_cup_of_mango_tea": "Mud Cup of Mango Tea",
+  "item.dried_spice.coffee_beans": "Coffee Beans",
 
   "desc.coffee.drink": "§7If you are reading this §6Yirmiri §7can be the one to blame for forgetting to add a description.",
   "desc.dark_coffee.drink": "§7Hello darkness my old friend.",
   "desc.green_tea.drink": "§7A sweet earthly brew that soothes the drinker.",
   "desc.milk.drink": "§7Milk is known to stain into cups, you might want to bring a §6backup cup.",
+  "desc.mango_tea.drink": "§7A mango a day keeps the doctor away.",
   "desc.generic.drink": "§7If you are reading this §6Yirmiri §7can be the one to blame for forgetting to add a description.",
 
   "tooltip.coffee.drink": "§9Slightly increases digging, attack speed and decreasing attack strength...",
   "tooltip.dark_coffee.drink": "§9Increases digging, attack speed and decreasing attack strength...",
   "tooltip.green_tea.drink": "§9Slowly regenerates the player's health for a short time...",
+  "tooltip.mango_tea.drink": "§9The effect for this tea is still work in progress, cough §6Yirmiri...",
   "tooltip.shift.information": "§5Hold §6SHIFT §5for more information...",
 
   "block.dried_spice.soul_stove": "Soul Stove",

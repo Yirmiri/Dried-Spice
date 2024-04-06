@@ -79,15 +79,19 @@ public class DriedSpice {
             event.accept(DSItems.MUD_CUP_OF_WATER);
             event.accept(DSItems.MUD_CUP_OF_MILK);
             event.accept(DSItems.MUD_CUP_OF_GREEN_TEA);
+            event.accept(DSItems.MUD_CUP_OF_MANGO_TEA);
             event.accept(DSItems.MUD_CUP_OF_COFFEE);
             event.accept(DSItems.MUD_CUP_OF_DARK_COFFEE);
 
             event.accept(DSItems.TEA_LEAVES);
             event.accept(DSItems.DRIED_TEA_LEAVES);
-            event.accept(DSItems.PEPPER);
-            event.accept(DSItems.SOUL_PEPPER);
+            event.accept(DSItems.COFFEE_BEANS);
             event.accept(DSItems.PEPPER_SEEDS);
             event.accept(DSItems.SOUL_PEPPER_SEEDS);
+
+            event.accept(DSItems.MANGO);
+            event.accept(DSItems.PEPPER);
+            event.accept(DSItems.SOUL_PEPPER);
         }
 
         if (event.getTab() == DSItemGroups.DRIED_SPICE_TAB.get() && (DSCompatRegistries.excessive_building)) {

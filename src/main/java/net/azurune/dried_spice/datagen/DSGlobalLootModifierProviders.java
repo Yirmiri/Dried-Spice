@@ -38,5 +38,9 @@ public class DSGlobalLootModifierProviders extends GlobalLootModifierProvider {
         add("azalea_flower_from_flowering_azalea", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("blocks/flowering_azalea_leaves")).build(), LootItemRandomChanceCondition.randomChance(0.1f).build()
         }, DSBlocks.AZALEA_FLOWER.get().asItem(), 1, 1));
+
+        add("mango_from_jungle_leaves", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("blocks/jungle_leaves")).build(), LootItemRandomChanceCondition.randomChance(0.2f).build()
+        }, DSItems.MANGO.get(), 1, 1));
     }
 }

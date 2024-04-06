@@ -39,12 +39,14 @@ public class DSProperties {
         public static final FoodProperties TEA_LEAVES = new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).fast().build();
         public static final FoodProperties PEPPER = new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0), 1.0F).alwaysEat().fast().build();
         public static final FoodProperties SOUL_PEPPER = new FoodProperties.Builder().nutrition(4).saturationMod(0.2f).effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 300, 0), 1.0F).alwaysEat().fast().build();
+        public static final FoodProperties MANGO = new FoodProperties.Builder().nutrition(4).saturationMod(0.2f).build();
 
         //DRINKS
         public static final FoodProperties WATER = new FoodProperties.Builder().alwaysEat().build();
         public static final FoodProperties GREEN_TEA = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.REGENERATION, 200, 0), 1.0F).alwaysEat().build();
         public static final FoodProperties COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 3000, 0), 1.0F).alwaysEat().build();
         public static final FoodProperties DARK_COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 1), 1.0F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 3000, 1), 1.0F).alwaysEat().build();
+        public static final FoodProperties MANGO_TEA = new FoodProperties.Builder().alwaysEat().build();
 
         //COMPAT
         public static final FoodProperties ANCIENT_TEA = new FoodProperties.Builder().effect(new MobEffectInstance(EBMobEffects.REACHING.get(), 6000, 0), 1.0F).alwaysEat().build();
