@@ -4,7 +4,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 
 public class NoSpecialEffect extends MobEffect {
-    public NoSpecialEffect(MobEffectCategory pCategory, int pColor) {
-        super(pCategory, pColor);
+    public NoSpecialEffect(MobEffectCategory category, int i) {
+        super(category, i);
     }
 }

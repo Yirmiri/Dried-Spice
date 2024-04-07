@@ -8,6 +8,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 public class DensityEffect extends MobEffect {
     public DensityEffect(MobEffectCategory mobEffectCategory, int color) {
         super(mobEffectCategory, color);
-        this.addAttributeModifier(Attributes.KNOCKBACK_RESISTANCE, "6C3A159B-905D-4EF8-BF87-BC4DADBE19AB", -1.0, AttributeModifier.Operation.ADDITION);
+        this.addAttributeModifier(Attributes.KNOCKBACK_RESISTANCE, "9ecc9f09-f331-4ee5-87ad-d1e71b0f8237", 1.0, AttributeModifier.Operation.MULTIPLY_TOTAL);
     }
 }

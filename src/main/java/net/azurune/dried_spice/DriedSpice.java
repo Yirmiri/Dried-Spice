@@ -86,6 +86,7 @@ public class DriedSpice {
 
             event.accept(DSItems.TEA_LEAVES);
             event.accept(DSItems.DRIED_TEA_LEAVES);
+            event.accept(DSItems.DRIED_BROWN_MUSHROOM);
             event.accept(DSItems.COFFEE_BEANS);
             event.accept(DSItems.PEPPER_SEEDS);
             event.accept(DSItems.SOUL_PEPPER_SEEDS);

@@ -14,10 +14,11 @@ import net.minecraftforge.registries.RegistryObject;
 public class DSItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DriedSpice.MODID);
     //INGREDIENTS
-    public static final RegistryObject<Item> TEA_LEAVES = ITEMS.register("tea_leaves", () -> new Item(new Item.Properties().food(DSProperties.Foods.TEA_LEAVES)));
-    public static final RegistryObject<Item> DRIED_TEA_LEAVES = ITEMS.register("dried_tea_leaves", () -> new Item(new Item.Properties().food(DSProperties.Foods.TEA_LEAVES)));
+    public static final RegistryObject<Item> TEA_LEAVES = ITEMS.register("tea_leaves", () -> new Item(new Item.Properties().food(DSProperties.Foods.GARBAGE_FOOD_SOURCE)));
+    public static final RegistryObject<Item> DRIED_TEA_LEAVES = ITEMS.register("dried_tea_leaves", () -> new Item(new Item.Properties().food(DSProperties.Foods.GARBAGE_FOOD_SOURCE)));
     public static final RegistryObject<Item> MUD_CUP = ITEMS.register("mud_cup", () -> new CupItem(new Item.Properties()));
     public static final RegistryObject<Item> COFFEE_BEANS = ITEMS.register("coffee_beans", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DRIED_BROWN_MUSHROOM = ITEMS.register("dried_brown_mushroom", () -> new Item(new Item.Properties().food(DSProperties.Foods.GARBAGE_FOOD_SOURCE)));
 
     //DRINKS
     public static final RegistryObject<Item> MUD_CUP_OF_WATER = ITEMS.register("mud_cup_of_water", () -> new GenericDrinkItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));

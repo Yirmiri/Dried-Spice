@@ -36,7 +36,7 @@ public class DSProperties {
 
     public class Foods {
         //MISC FOODS
-        public static final FoodProperties TEA_LEAVES = new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).fast().build();
+        public static final FoodProperties GARBAGE_FOOD_SOURCE = new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).fast().build();
         public static final FoodProperties PEPPER = new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0), 1.0F).alwaysEat().fast().build();
         public static final FoodProperties SOUL_PEPPER = new FoodProperties.Builder().nutrition(4).saturationMod(0.2f).effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 300, 0), 1.0F).alwaysEat().fast().build();
         public static final FoodProperties MANGO = new FoodProperties.Builder().nutrition(4).saturationMod(0.2f).build();

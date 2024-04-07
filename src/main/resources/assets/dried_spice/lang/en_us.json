@@ -28,7 +28,6 @@
 
   "effect.dried_spice.vulnerability": "Vulnerability",
   "effect.dried_spice.health_reduction": "Health Reduction",
-  "effect.dried_spice.lightweight": "Lightweight",
   "effect.dried_spice.density": "Density",
   "effect.dried_spice.fast_falling": "Fast Falling",
   "effect.dried_spice.drowsy": "Drowsy",
@@ -59,7 +58,6 @@
 
   "effect.dried_spice.vulnerability.description": "Reduces the armor points of the user.",
   "effect.dried_spice.health_reduction.description": "Reduces the health points of the user.",
-  "effect.dried_spice.lightweight.description": "Reduces the knockback resistance of the user.",
   "effect.dried_spice.density.description": "Increases the knockback resistance of the user.",
   "effect.dried_spice.fast_falling.description": "Decreases the jump height of the user.",
   "effect.dried_spice.drowsy.description": "Locks the current time of all potion effects the user has.",
@@ -69,7 +67,7 @@
   "effect.dried_spice.fire_skin.description": "Attackers of the user with this effect applied burn for a short time.",
   "effect.dried_spice.trail_blazing.description": "When the user walks a trail of fire follows behind.",
   "effect.dried_spice.water_walking.description": "The user with this applied can walk on water.",
-  "effect.dried_spice.pyromaniac.description": "When the user is inside of fire they heal.",
+  "effect.dried_spice.pyromaniac.description": "When the user is inside of fire they regenerate health at a rapid rate.",
   "effect.dried_spice.hyper_elasticity.description": "When the user of the effect falls from a height they bounce back upwards and take decreased fall damage.",
   "effect.dried_spice.enigma.description": "Mobs are scared of the user with this effect applied.",
   "effect.dried_spice.steel_feet.description": "Removes fall damage for the user with this effect applied.",

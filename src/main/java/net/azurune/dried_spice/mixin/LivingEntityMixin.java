@@ -36,7 +36,11 @@ public class LivingEntityMixin {
     public void hurt(DamageSource source, float pAmount, CallbackInfoReturnable<Boolean> cir) {
         LivingEntity livingEntity = (LivingEntity) (Object) this;
         if (source.is(DamageTypeTags.IS_FIRE) && livingEntity.hasEffect(DSMobEffects.PYROMANIAC.get())) {
-            livingEntity.heal(1.0F);
+            if (livingEntity.tickCount % 20 == 0) {
+                if (livingEntity.getHealth() < livingEntity.getMaxHealth()) {
+                    livingEntity.heal(1.0F);
+                }
+            }
             cir.setReturnValue(false);
         }
 
