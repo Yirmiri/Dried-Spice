@@ -77,6 +77,8 @@ dependencies {
 
     //Required Dependants
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    compileOnly fg.deobf("curse.maven:tipsylib-${tipsylib_version}")
+    runtimeOnly fg.deobf("curse.maven:tipsylib-${tipsylib_version}")
 
     //Compat
     implementation fg.deobf("curse.maven:excessive-building-${excessive_building_version}")

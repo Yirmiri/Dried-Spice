@@ -23,3 +23,10 @@ logoFile="dried_spice_logo.png" #optional
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.dried_spice]]
+    modId="tipsylib"
+    mandatory=true
+    versionRange="${tipsylib_version}"
+    ordering="NONE"
+    side="BOTH"
