@@ -18,7 +18,7 @@ public class PerceptionEffect extends MobEffect {
         List<LivingEntity> list = living.level().getEntitiesOfClass(LivingEntity.class, living.getBoundingBox().inflate(12.0D));
         for (LivingEntity livingEntity : list) {
             if (living.isAlive()) {
-                livingEntity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 20, 0));
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 30, 0));
             }
         }
     }
