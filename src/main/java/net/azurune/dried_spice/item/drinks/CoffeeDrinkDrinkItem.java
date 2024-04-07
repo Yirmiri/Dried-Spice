@@ -10,8 +10,8 @@ import net.minecraft.world.level.Level;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class CoffeeDrinkItem extends GenericDrinkItem {
-    public CoffeeDrinkItem(Properties properties, int speed) {
+public class CoffeeDrinkDrinkItem extends GenericDrinkItem {
+    public CoffeeDrinkDrinkItem(Properties properties, int speed) {
         super(properties, speed);
     }
 

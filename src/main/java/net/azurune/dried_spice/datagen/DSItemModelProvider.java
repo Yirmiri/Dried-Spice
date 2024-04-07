@@ -28,6 +28,7 @@ public class DSItemModelProvider extends ItemModelProvider {
         simpleItem(DSItems.MUD_CUP_OF_MANGO_TEA);
         simpleItem(DSItems.COFFEE_BEANS);
         simpleItem(DSItems.DRIED_BROWN_MUSHROOM);
+        simpleItem(DSItems.MUD_CUP_OF_BLACK_TEA);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

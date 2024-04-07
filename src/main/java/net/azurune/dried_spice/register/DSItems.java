@@ -23,10 +23,11 @@ public class DSItems {
     //DRINKS
     public static final RegistryObject<Item> MUD_CUP_OF_WATER = ITEMS.register("mud_cup_of_water", () -> new GenericDrinkItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));
     public static final RegistryObject<Item> MUD_CUP_OF_GREEN_TEA = ITEMS.register("mud_cup_of_green_tea", () -> new GreenTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.GREEN_TEA).stacksTo(2), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_COFFEE = ITEMS.register("mud_cup_of_coffee", () -> new CoffeeDrinkItem(new Item.Properties().food(DSProperties.Foods.COFFEE).stacksTo(4), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_COFFEE = ITEMS.register("mud_cup_of_coffee", () -> new CoffeeDrinkDrinkItem(new Item.Properties().food(DSProperties.Foods.COFFEE).stacksTo(4), 32));
     public static final RegistryObject<Item> MUD_CUP_OF_DARK_COFFEE = ITEMS.register("mud_cup_of_dark_coffee", () -> new DarkCoffeeDrinkItem(new Item.Properties().food(DSProperties.Foods.DARK_COFFEE).stacksTo(4), 32));
     public static final RegistryObject<Item> MUD_CUP_OF_MILK = ITEMS.register("mud_cup_of_milk", () -> new MilkDrinkItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_MANGO_TEA = ITEMS.register("mud_cup_of_mango_tea", () -> new MangoTeaItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_MANGO_TEA = ITEMS.register("mud_cup_of_mango_tea", () -> new MangoTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_BLACK_TEA = ITEMS.register("mud_cup_of_black_tea", () -> new BlackTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));
 
     //NATURAL
     public static final RegistryObject<Item> PEPPER_SEEDS = ITEMS.register("pepper_seeds", () -> new ItemNameBlockItem(DSBlocks.PEPPER_CROP.get(), new Item.Properties()));
