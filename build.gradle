@@ -85,6 +85,8 @@ dependencies {
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
+
+    implementation fg.deobf("curse.maven:just-enough-effect-descriptions-jeed-532286:4863208")
 }
 
 tasks.named('processResources', ProcessResources).configure {

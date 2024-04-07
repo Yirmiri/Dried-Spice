@@ -25,5 +25,9 @@ public class EntityCollisionContextMixin {
         if (fluidState.getType() == Fluids.WATER || fluidState1.getType() == Fluids.WATER || fluidState1.getType() == Fluids.FLOWING_WATER || fluidState.getType() == Fluids.FLOWING_WATER)
             if (this.entity instanceof LivingEntity living)
                 if (living.hasEffect(DSMobEffects.WATER_WALKING.get())) cir.setReturnValue(true);
+
+        if (fluidState.getType() == Fluids.LAVA || fluidState1.getType() == Fluids.LAVA || fluidState1.getType() == Fluids.FLOWING_LAVA || fluidState.getType() == Fluids.FLOWING_LAVA)
+            if (this.entity instanceof LivingEntity living)
+                if (living.hasEffect(DSMobEffects.LAVA_WALKING.get())) cir.setReturnValue(true);
     }
 }

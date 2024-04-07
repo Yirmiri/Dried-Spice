@@ -40,7 +40,7 @@ public class LivingEntityMixin {
             cir.setReturnValue(false);
         }
 
-        if (livingEntity.hasEffect(DSMobEffects.FIRE_WALKING.get()) && source.is(DamageTypeTags.IS_FIRE))
+        if (livingEntity.hasEffect(DSMobEffects.TRAIL_BLAZING.get()) && source.is(DamageTypeTags.IS_FIRE))
             cir.setReturnValue(false);
 
         if (livingEntity.hasEffect(DSMobEffects.FIRE_SKIN.get())) {

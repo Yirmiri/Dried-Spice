@@ -7,7 +7,6 @@ public class WeightedRandom<T> {
     public final HashMap<T, Float> weightedRandomList = new HashMap<>();
 
     public WeightedRandom() {
-
     }
 
     public WeightedRandom<T> add(T t, float weight) {

@@ -42,7 +42,7 @@ public class CommonForgeEvents {
     public static void playerTickEvent(TickEvent.PlayerTickEvent event) {
         Player player = event.player;
         BlockPos pos = player.blockPosition();
-        if (player.hasEffect(DSMobEffects.FIRE_WALKING.get()) && !player.level().getBlockState(pos.below()).isAir() && player.level().getBlockState(pos).isAir()) {
+        if (player.hasEffect(DSMobEffects.TRAIL_BLAZING.get()) && !player.level().getBlockState(pos.below()).isAir() && player.level().getBlockState(pos).isAir()) {
             player.level().setBlockAndUpdate(pos, Blocks.FIRE.defaultBlockState());
         }
     }
