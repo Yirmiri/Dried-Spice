@@ -42,6 +42,8 @@
   "effect.dried_spice.enigma": "Enigma",
   "effect.dried_spice.steel_feet": "Steel Feet",
   "effect.dried_spice.lava_walking": "Lava Walking",
+  "effect.dried_spice.lesser_damage_boost": "Lesser Strength",
+  "effect.dried_spice.lesser_weakness": "Lesser Weakness",
 
   "desc.coffee.drink": "§7If you are reading this §6Yirmiri §7can be the one to blame for forgetting to add a description.",
   "desc.dark_coffee.drink": "§7Hello darkness my old friend.",
@@ -72,6 +74,8 @@
   "effect.dried_spice.enigma.description": "Mobs are scared of the user with this effect applied.",
   "effect.dried_spice.steel_feet.description": "Removes fall damage for the user with this effect applied.",
   "effect.dried_spice.lava_walking.description": "The user with this applied can walk on lava... just make sure to bring fire resistance.",
+  "effect.dried_spice.damage_boost.description": "Slightly increases attack damage of the user.",
+  "effect.dried_spice.lesser_weakness.description": "Slightly decreases attack damage of the user.",
 
   "block.dried_spice.soul_stove": "Soul Stove",
 
