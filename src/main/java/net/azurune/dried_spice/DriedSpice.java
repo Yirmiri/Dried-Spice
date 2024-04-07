@@ -72,44 +72,44 @@ public class DriedSpice {
         MenuScreens.register(DSMenuTypes.TEA_KETTLE_MENU.get(), TeaKettleScreen::new);
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTab() == DSItemGroups.DRIED_SPICE_TAB.get()) {
-            event.accept(DSBlocks.STOVE);
-            event.accept(DSBlocks.COPPER_TEA_KETTLE);
-            event.accept(DSBlocks.AZALEA_FLOWER);
-            event.accept(DSBlocks.DECORATIVE_BOTTLE);
-            event.accept(DSBlocks.DECORATIVE_WATER_BOTTLE);
-            event.accept(DSBlocks.DECORATIVE_HONEY_BOTTLE);
-            event.accept(DSBlocks.DECORATIVE_MILK_BOTTLE);
-            event.accept(DSBlocks.DECORATIVE_DRAGONS_BREATH_BOTTLE);
+    private void addCreative(BuildCreativeModeTabContentsEvent tab) {
+        if (tab.getTab() == DSItemGroups.DRIED_SPICE_TAB.get()) {
+            tab.accept(DSBlocks.STOVE);
+            tab.accept(DSBlocks.COPPER_TEA_KETTLE);
+            tab.accept(DSBlocks.AZALEA_FLOWER);
+            tab.accept(DSBlocks.DECORATIVE_BOTTLE);
+            tab.accept(DSBlocks.DECORATIVE_WATER_BOTTLE);
+            tab.accept(DSBlocks.DECORATIVE_HONEY_BOTTLE);
+            tab.accept(DSBlocks.DECORATIVE_MILK_BOTTLE);
+            tab.accept(DSBlocks.DECORATIVE_DRAGONS_BREATH_BOTTLE);
 
-            event.accept(DSItems.MUD_CUP);
-            event.accept(DSItems.MUD_CUP_OF_WATER);
-            event.accept(DSItems.MUD_CUP_OF_MILK);
-            event.accept(DSItems.MUD_CUP_OF_GREEN_TEA);
-            event.accept(DSItems.MUD_CUP_OF_MANGO_TEA);
-            event.accept(DSItems.MUD_CUP_OF_COFFEE);
-            event.accept(DSItems.MUD_CUP_OF_DARK_COFFEE);
+            tab.accept(DSItems.MUD_CUP);
+            tab.accept(DSItems.MUD_CUP_OF_WATER);
+            tab.accept(DSItems.MUD_CUP_OF_MILK);
+            tab.accept(DSItems.MUD_CUP_OF_GREEN_TEA);
+            tab.accept(DSItems.MUD_CUP_OF_MANGO_TEA);
+            tab.accept(DSItems.MUD_CUP_OF_COFFEE);
+            tab.accept(DSItems.MUD_CUP_OF_DARK_COFFEE);
 
-            event.accept(DSItems.TEA_LEAVES);
-            event.accept(DSItems.DRIED_TEA_LEAVES);
-            event.accept(DSItems.DRIED_BROWN_MUSHROOM);
-            event.accept(DSItems.COFFEE_BEANS);
-            event.accept(DSItems.PEPPER_SEEDS);
-            event.accept(DSItems.SOUL_PEPPER_SEEDS);
+            tab.accept(DSItems.TEA_LEAVES);
+            tab.accept(DSItems.DRIED_TEA_LEAVES);
+            tab.accept(DSItems.DRIED_BROWN_MUSHROOM);
+            tab.accept(DSItems.COFFEE_BEANS);
+            tab.accept(DSItems.PEPPER_SEEDS);
+            tab.accept(DSItems.SOUL_PEPPER_SEEDS);
 
-            event.accept(DSItems.MANGO);
-            event.accept(DSItems.PEPPER);
-            event.accept(DSItems.SOUL_PEPPER);
+            tab.accept(DSItems.MANGO);
+            tab.accept(DSItems.PEPPER);
+            tab.accept(DSItems.SOUL_PEPPER);
         }
 
-        if (event.getTab() == DSItemGroups.DRIED_SPICE_TAB.get() && (DSCompatRegistries.excessive_building)) {
-            event.accept(ExcessiveBuildingCompat.SOUL_STOVE);
+        if (tab.getTab() == DSItemGroups.DRIED_SPICE_TAB.get() && (DSCompatRegistries.excessive_building)) {
+            tab.accept(ExcessiveBuildingCompat.SOUL_STOVE);
 
-            event.accept(ExcessiveBuildingCompat.MUD_CUP_OF_ANCIENT_TEA);
+            tab.accept(ExcessiveBuildingCompat.MUD_CUP_OF_ANCIENT_TEA);
 
-            event.accept(ExcessiveBuildingCompat.ANCIENT_TEA_LEAVES);
-            event.accept(ExcessiveBuildingCompat.ANCIENT_DRIED_TEA_LEAVES);
+            tab.accept(ExcessiveBuildingCompat.ANCIENT_TEA_LEAVES);
+            tab.accept(ExcessiveBuildingCompat.ANCIENT_DRIED_TEA_LEAVES);
         }
     }
 }

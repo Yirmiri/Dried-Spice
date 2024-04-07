@@ -20,6 +20,7 @@ public class DSMobEffects {
     public static final RegistryObject<NoSpecialEffect> LAVA_WALKING = MOB_EFFECTS.register("lava_walking", () -> new NoSpecialEffect(MobEffectCategory.BENEFICIAL, 0xc34c02));
     public static final RegistryObject<MobEffect> LESSER_DAMAGE_BOOST = MOB_EFFECTS.register("lesser_damage_boost", () -> new UnclearableEffect(MobEffectCategory.BENEFICIAL, 0xd06464).addAttributeModifier(Attributes.ATTACK_DAMAGE, "bddcfad8-0495-4074-b53b-7c8e2b197a14", 1.0,AttributeModifier.Operation.ADDITION));
     public static final RegistryObject<MobEffect> LESSER_WEAKNESS = MOB_EFFECTS.register("lesser_weakness", () -> new UnclearableEffect(MobEffectCategory.HARMFUL, 0x8c4c4c).addAttributeModifier(Attributes.ATTACK_DAMAGE, "2544cd96-7794-4184-a845-73c642132d6a", -1.0,AttributeModifier.Operation.ADDITION));
+    public static final RegistryObject<PerceptionEffect> PERCEPTION = MOB_EFFECTS.register("perception", () -> new PerceptionEffect(MobEffectCategory.NEUTRAL, 0x336d37));
     //Effects powered by Zeus™
     public static final RegistryObject<MobEffect> FAST_FALLING = MOB_EFFECTS.register("fast_falling", () -> new FastFallingEffect(MobEffectCategory.HARMFUL, 0x969dab));
     public static final RegistryObject<UnclearableEffect> DROWSY = MOB_EFFECTS.register("drowsy", () -> new UnclearableEffect(MobEffectCategory.HARMFUL, 0x84d0c7));
@@ -31,7 +32,7 @@ public class DSMobEffects {
     public static final RegistryObject<NoSpecialEffect> PYROMANIAC = MOB_EFFECTS.register("pyromaniac", () -> new NoSpecialEffect(MobEffectCategory.BENEFICIAL, 0xec3920));
     public static final RegistryObject<NoSpecialEffect> HYPER_ELASTICITY = MOB_EFFECTS.register("hyper_elasticity", () -> new NoSpecialEffect(MobEffectCategory.BENEFICIAL, 0x9ad8fa));
     public static final RegistryObject<NoSpecialEffect> STEEL_FEET = MOB_EFFECTS.register("steel_feet", () -> new NoSpecialEffect(MobEffectCategory.BENEFICIAL, 0x5c6478));
-    public static final RegistryObject<NoSpecialEffect> ENIGMA = MOB_EFFECTS.register("enigma", () -> new NoSpecialEffect(MobEffectCategory.BENEFICIAL, 0x000000));
+    public static final RegistryObject<NoSpecialEffect> ENIGMA = MOB_EFFECTS.register("enigma", () -> new NoSpecialEffect(MobEffectCategory.BENEFICIAL, 0x020202));
     public static final RegistryObject<NoSpecialEffect> WATER_WALKING = MOB_EFFECTS.register("water_walking", () -> new NoSpecialEffect(MobEffectCategory.BENEFICIAL, 0x5c89dc));
 
     public static void register(IEventBus eventBus) {
