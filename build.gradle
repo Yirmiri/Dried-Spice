@@ -86,7 +86,11 @@ dependencies {
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
 
+    //Dev Envio
     implementation fg.deobf("curse.maven:just-enough-effect-descriptions-jeed-532286:4863208")
+    implementation fg.deobf("curse.maven:worldedit-225608:4586218")
+    implementation fg.deobf("curse.maven:embeddium-908741:5034486")
+    implementation fg.deobf("curse.maven:oculus-581495:4952626")
 }
 
 tasks.named('processResources', ProcessResources).configure {

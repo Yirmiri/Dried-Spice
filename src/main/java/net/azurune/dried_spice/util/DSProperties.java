@@ -12,7 +12,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
-import net.yirmiri.excessive_building.potion.EBMobEffects;
 
 public class DSProperties {
 
@@ -48,8 +47,5 @@ public class DSProperties {
         public static final FoodProperties COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 0), 1.0F).effect(new MobEffectInstance(DSMobEffects.LESSER_WEAKNESS.get(), 3000, 1), 1.0F).alwaysEat().build();
         public static final FoodProperties DARK_COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 1), 1.0F).effect(new MobEffectInstance(DSMobEffects.LESSER_WEAKNESS.get(), 3000, 3), 1.0F).alwaysEat().build();
         public static final FoodProperties MANGO_TEA = new FoodProperties.Builder().alwaysEat().build();
-
-        //COMPAT
-        public static final FoodProperties ANCIENT_TEA = new FoodProperties.Builder().effect(new MobEffectInstance(EBMobEffects.REACHING.get(), 6000, 0), 1.0F).alwaysEat().build();
     }
 }
