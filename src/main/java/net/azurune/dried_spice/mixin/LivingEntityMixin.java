@@ -2,13 +2,10 @@ package net.azurune.dried_spice.mixin;
 
 import net.azurune.dried_spice.mixininterfaces.IMobEffectInstanceMixin;
 import net.azurune.dried_spice.register.DSMobEffects;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.stats.Stats;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Final;
@@ -54,5 +51,8 @@ public class LivingEntityMixin {
             Entity entity = source.getEntity();
             if (entity != null) entity.setSecondsOnFire(5);
         }
+
+        if (livingEntity.hasEffect(DSMobEffects.TOUGH_SKIN.get()) && source.is(DamageTypeTags.IS_EXPLOSION))
+            cir.setReturnValue(false);
     }
 }
