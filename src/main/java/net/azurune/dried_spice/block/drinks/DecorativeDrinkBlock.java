@@ -4,6 +4,7 @@ import net.azurune.dried_spice.block.AbstractDrinkBlock;
 import net.azurune.dried_spice.datagen.DSItemTagProvider;
 import net.azurune.dried_spice.register.DSBlocks;
 import net.azurune.dried_spice.util.DSStates;
+import net.azurune.dried_spice.util.DSStats;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -37,6 +38,7 @@ public class DecorativeDrinkBlock extends AbstractDrinkBlock {
 
     protected static InteractionResult drink(LevelAccessor accessor, BlockPos pos, BlockState state, Player player) {
         int i = state.getValue(DRANK);
+        player.awardStat(DSStats.DRINK_DECORATIVE_BOTTLE);
         accessor.gameEvent(player, GameEvent.DRINK, pos);
         accessor.playSound((Player) null, pos, SoundEvents.GENERIC_DRINK, SoundSource.BLOCKS, 1.0F, 1.0F);
 

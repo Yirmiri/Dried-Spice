@@ -1,8 +1,10 @@
 package net.azurune.dried_spice.block;
 
+import net.azurune.dried_spice.util.DSStats;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -14,6 +16,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.BrewingStandBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -108,6 +111,7 @@ public class TeaKettleBlock extends BaseEntityBlock implements SimpleWaterlogged
             BlockEntity entity = level.getBlockEntity(pos);
             if(entity instanceof TeaKettleBlockEntity) {
                 NetworkHooks.openScreen(((ServerPlayer)player), (TeaKettleBlockEntity)entity, pos);
+                player.awardStat(DSStats.INTERACT_WITH_KETTLE);
             } else {
                 throw new IllegalStateException("It seems our container is missing, uh oh!");
             }

@@ -5,6 +5,7 @@ import net.azurune.dried_spice.compat.ExcessiveBuildingCompat;
 import net.azurune.dried_spice.datagen.loot.DSLootTableModifier;
 import net.azurune.dried_spice.register.DSMobEffects;
 import net.azurune.dried_spice.screen.TeaKettleScreen;
+import net.azurune.dried_spice.util.DSStats;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -14,6 +15,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.azurune.dried_spice.register.*;
 
@@ -46,6 +48,11 @@ public class DriedSpice {
 
         modEventBus.addListener(this::onClientSetup);
         modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(this::commonStart);
+    }
+
+    public void commonStart(FMLCommonSetupEvent event) {
+        event.enqueueWork(DSStats::init);
     }
 
     @SubscribeEvent

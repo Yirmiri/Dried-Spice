@@ -3,6 +3,7 @@ package net.azurune.dried_spice.util;
 import net.azurune.dried_spice.block.drinks.DecorativeDragonsBreathBlock;
 import net.azurune.dried_spice.block.SoulPepperBlock;
 import net.azurune.dried_spice.block.StoveBlock;
+import net.azurune.dried_spice.register.DSMobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -44,8 +45,8 @@ public class DSProperties {
         //DRINKS
         public static final FoodProperties WATER = new FoodProperties.Builder().alwaysEat().build();
         public static final FoodProperties GREEN_TEA = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.REGENERATION, 200, 0), 1.0F).alwaysEat().build();
-        public static final FoodProperties COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 3000, 0), 1.0F).alwaysEat().build();
-        public static final FoodProperties DARK_COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 1), 1.0F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 3000, 1), 1.0F).alwaysEat().build();
+        public static final FoodProperties COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 0), 1.0F).effect(new MobEffectInstance(DSMobEffects.LESSER_WEAKNESS.get(), 3000, 1), 1.0F).alwaysEat().build();
+        public static final FoodProperties DARK_COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 1), 1.0F).effect(new MobEffectInstance(DSMobEffects.LESSER_WEAKNESS.get(), 3000, 3), 1.0F).alwaysEat().build();
         public static final FoodProperties MANGO_TEA = new FoodProperties.Builder().alwaysEat().build();
 
         //COMPAT

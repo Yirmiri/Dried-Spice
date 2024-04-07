@@ -58,6 +58,9 @@
   "tooltip.mango_tea.drink": "§9The effect for this tea is still work in progress, cough §6Yirmiri...",
   "tooltip.shift.information": "§5Hold §6SHIFT §5for more information...",
 
+  "stat.minecraft.interact_with_kettle": "Interactions with Tea Kettle",
+  "stat.minecraft.drink_decorative_bottle": "Decorative Bottle Sips",
+
   "effect.dried_spice.vulnerability.description": "Reduces the armor points of the user.",
   "effect.dried_spice.health_reduction.description": "Reduces the health points of the user.",
   "effect.dried_spice.density.description": "Increases the knockback resistance of the user.",
@@ -71,10 +74,10 @@
   "effect.dried_spice.water_walking.description": "The user with this applied can walk on water.",
   "effect.dried_spice.pyromaniac.description": "When the user is inside of fire they regenerate health at a rapid rate.",
   "effect.dried_spice.hyper_elasticity.description": "When the user of the effect falls from a height they bounce back upwards and take decreased fall damage.",
-  "effect.dried_spice.enigma.description": "Mobs are scared of the user with this effect applied.",
+  "effect.dried_spice.enigma.description": "Mobs cannot see the user with this effect applied.",
   "effect.dried_spice.steel_feet.description": "Removes fall damage for the user with this effect applied.",
   "effect.dried_spice.lava_walking.description": "The user with this applied can walk on lava... just make sure to bring fire resistance.",
-  "effect.dried_spice.damage_boost.description": "Slightly increases attack damage of the user.",
+  "effect.dried_spice.lesser_damage_boost.description": "Slightly increases attack damage of the user.",
   "effect.dried_spice.lesser_weakness.description": "Slightly decreases attack damage of the user.",
 
   "block.dried_spice.soul_stove": "Soul Stove",
