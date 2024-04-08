@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dried_spice:item/mud_cup_of_spicy_coffee"
+  }
+}

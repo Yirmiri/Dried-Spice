@@ -16,6 +16,7 @@ import net.minecraft.world.level.material.PushReaction;
 public class DSProperties {
 
     public class BlockProperties {
+
         //MISC
         public static final BlockBehaviour.Properties COPPER_TEA_KETTLE = BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASS).strength(2.0F, 2.0F).sound(SoundType.COPPER);
         public static final BlockBehaviour.Properties IRON_TEA_KETTLE = BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.BASS).strength(2.0F, 2.0F).sound(SoundType.NETHERITE_BLOCK);
@@ -47,5 +48,14 @@ public class DSProperties {
         public static final FoodProperties COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.LESSER_WEAKNESS.get(), 3000, 1), 1.0F).alwaysEat().build();
         public static final FoodProperties DARK_COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 1), 1.0F).effect(new MobEffectInstance(TLMobEffects.LESSER_WEAKNESS.get(), 3000, 3), 1.0F).alwaysEat().build();
         public static final FoodProperties MANGO_TEA = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties BLACK_TEA = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties AZALEA_TEA = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties HONEY_TEA = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties KELP_TEA = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties SPICY_COFFEE = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties HOT_COCOA = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties SPICY_HOT_COCOA = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties CHOCOLATE_MILK = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties MUSHROOM_TEA = new FoodProperties.Builder().alwaysEat().build();
     }
 }

@@ -20,6 +20,7 @@ import java.util.function.Supplier;
 
 public class DSBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, DriedSpice.MODID);
+
     //MISC
     public static final RegistryObject<Block> COPPER_TEA_KETTLE = register("copper_tea_kettle", () -> new TeaKettleBlock(DSProperties.BlockProperties.COPPER_TEA_KETTLE));
     public static final RegistryObject<Block> IRON_TEA_KETTLE = register("iron_tea_kettle", () -> new TeaKettleBlock(DSProperties.BlockProperties.IRON_TEA_KETTLE));

@@ -27,6 +27,6 @@ logoFile="dried_spice_logo.png" #optional
 [[dependencies.dried_spice]]
     modId="tipsylib"
     mandatory=true
-    versionRange="${tipsylib_version}"
+    versionRange="[1.0.0,)"
     ordering="NONE"
     side="BOTH"
