@@ -26,18 +26,18 @@ public class DSItems {
     public static final RegistryObject<Item> MUD_CUP_OF_WATER = ITEMS.register("mud_cup_of_water", () -> new GenericDrinkItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));
     public static final RegistryObject<Item> MUD_CUP_OF_GREEN_TEA = ITEMS.register("mud_cup_of_green_tea", () -> new GreenTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.GREEN_TEA).stacksTo(2), 32));
     public static final RegistryObject<Item> MUD_CUP_OF_COFFEE = ITEMS.register("mud_cup_of_coffee", () -> new CoffeeDrinkDrinkItem(new Item.Properties().food(DSProperties.Foods.COFFEE).stacksTo(4), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_DARK_COFFEE = ITEMS.register("mud_cup_of_dark_coffee", () -> new DarkCoffeeDrinkItem(new Item.Properties().food(DSProperties.Foods.DARK_COFFEE).stacksTo(4), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_DARK_COFFEE = ITEMS.register("mud_cup_of_dark_coffee", () -> new DarkCoffeeDrinkItem(new Item.Properties().food(DSProperties.Foods.DARK_COFFEE).stacksTo(4), 48));
     public static final RegistryObject<Item> MUD_CUP_OF_MILK = ITEMS.register("mud_cup_of_milk", () -> new MilkDrinkItem(new Item.Properties().food(DSProperties.Foods.WATER).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_MANGO_TEA = ITEMS.register("mud_cup_of_mango_tea", () -> new MangoTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.MANGO_TEA).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_BLACK_TEA = ITEMS.register("mud_cup_of_black_tea", () -> new BlackTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.BLACK_TEA).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_KELP_TEA = ITEMS.register("mud_cup_of_kelp_tea", () -> new KelpTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.KELP_TEA).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_HOT_COCOA = ITEMS.register("mud_cup_of_hot_cocoa", () -> new HotCocoaDrinkItem(new Item.Properties().food(DSProperties.Foods.HOT_COCOA).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_SPICY_HOT_COCOA = ITEMS.register("mud_cup_of_spicy_hot_cocoa", () -> new SpicyHotCocoaDrinkItem(new Item.Properties().food(DSProperties.Foods.SPICY_HOT_COCOA).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_SPICY_COFFEE = ITEMS.register("mud_cup_of_spicy_coffee", () -> new SpicyCoffeeDrinkItem(new Item.Properties().food(DSProperties.Foods.SPICY_COFFEE).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_HONEY_TEA = ITEMS.register("mud_cup_of_honey_tea", () -> new HoneyTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.HONEY_TEA).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_MUSHROOM_TEA = ITEMS.register("mud_cup_of_mushroom_tea", () -> new MushroomTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.MUSHROOM_TEA).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_AZALEA_TEA = ITEMS.register("mud_cup_of_azalea_tea", () -> new AzaleaTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.AZALEA_TEA).stacksTo(1), 32));
-    public static final RegistryObject<Item> MUD_CUP_OF_CHOCOLATE_MILK = ITEMS.register("mud_cup_of_chocolate_milk", () -> new ChocolateMilkDrinkItem(new Item.Properties().food(DSProperties.Foods.CHOCOLATE_MILK).stacksTo(1), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_MANGO_TEA = ITEMS.register("mud_cup_of_mango_tea", () -> new MangoTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.MANGO_TEA).stacksTo(2), 48));
+    public static final RegistryObject<Item> MUD_CUP_OF_BLACK_TEA = ITEMS.register("mud_cup_of_black_tea", () -> new BlackTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.BLACK_TEA).stacksTo(2), 48));
+    public static final RegistryObject<Item> MUD_CUP_OF_KELP_TEA = ITEMS.register("mud_cup_of_kelp_tea", () -> new KelpTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.KELP_TEA).stacksTo(4), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_HOT_COCOA = ITEMS.register("mud_cup_of_hot_cocoa", () -> new HotCocoaDrinkItem(new Item.Properties().food(DSProperties.Foods.HOT_COCOA).stacksTo(1), 48));
+    public static final RegistryObject<Item> MUD_CUP_OF_SPICY_HOT_COCOA = ITEMS.register("mud_cup_of_spicy_hot_cocoa", () -> new SpicyHotCocoaDrinkItem(new Item.Properties().food(DSProperties.Foods.SPICY_HOT_COCOA).stacksTo(4), 32));
+    public static final RegistryObject<Item> MUD_CUP_OF_SPICY_COFFEE = ITEMS.register("mud_cup_of_spicy_coffee", () -> new SpicyCoffeeDrinkItem(new Item.Properties().food(DSProperties.Foods.SPICY_COFFEE).stacksTo(1), 48));
+    public static final RegistryObject<Item> MUD_CUP_OF_HONEY_TEA = ITEMS.register("mud_cup_of_honey_tea", () -> new HoneyTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.HONEY_TEA).stacksTo(1), 64));
+    public static final RegistryObject<Item> MUD_CUP_OF_MUSHROOM_TEA = ITEMS.register("mud_cup_of_mushroom_tea", () -> new MushroomTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.MUSHROOM_TEA).stacksTo(1), 48));
+    public static final RegistryObject<Item> MUD_CUP_OF_AZALEA_TEA = ITEMS.register("mud_cup_of_azalea_tea", () -> new AzaleaTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.AZALEA_TEA).stacksTo(2), 48));
+    public static final RegistryObject<Item> MUD_CUP_OF_CHOCOLATE_MILK = ITEMS.register("mud_cup_of_chocolate_milk", () -> new ChocolateMilkDrinkItem(new Item.Properties().food(DSProperties.Foods.CHOCOLATE_MILK).stacksTo(1), 48));
 
     //NATURAL
     public static final RegistryObject<Item> PEPPER_SEEDS = ITEMS.register("pepper_seeds", () -> new ItemNameBlockItem(DSBlocks.PEPPER_CROP.get(), new Item.Properties()));

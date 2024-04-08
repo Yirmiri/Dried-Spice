@@ -45,17 +45,17 @@ public class DSProperties {
         //DRINKS
         public static final FoodProperties WATER = new FoodProperties.Builder().alwaysEat().build();
         public static final FoodProperties GREEN_TEA = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.REGENERATION, 200, 0), 1.0F).alwaysEat().build();
-        public static final FoodProperties COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.LESSER_WEAKNESS.get(), 3000, 1), 1.0F).alwaysEat().build();
+        public static final FoodProperties COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 1600, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.LESSER_WEAKNESS.get(), 1600, 1), 1.0F).alwaysEat().build();
         public static final FoodProperties DARK_COFFEE = new FoodProperties.Builder().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 3000, 1), 1.0F).effect(new MobEffectInstance(TLMobEffects.LESSER_WEAKNESS.get(), 3000, 3), 1.0F).alwaysEat().build();
-        public static final FoodProperties MANGO_TEA = new FoodProperties.Builder().alwaysEat().build();
-        public static final FoodProperties BLACK_TEA = new FoodProperties.Builder().alwaysEat().build();
-        public static final FoodProperties AZALEA_TEA = new FoodProperties.Builder().alwaysEat().build();
-        public static final FoodProperties HONEY_TEA = new FoodProperties.Builder().alwaysEat().build();
-        public static final FoodProperties KELP_TEA = new FoodProperties.Builder().alwaysEat().build();
-        public static final FoodProperties SPICY_COFFEE = new FoodProperties.Builder().alwaysEat().build();
-        public static final FoodProperties HOT_COCOA = new FoodProperties.Builder().alwaysEat().build();
-        public static final FoodProperties SPICY_HOT_COCOA = new FoodProperties.Builder().alwaysEat().build();
-        public static final FoodProperties CHOCOLATE_MILK = new FoodProperties.Builder().alwaysEat().build();
-        public static final FoodProperties MUSHROOM_TEA = new FoodProperties.Builder().alwaysEat().build();
+        public static final FoodProperties MANGO_TEA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.STEEL_FEET.get(), 3000, 0), 1.0F).build();
+        public static final FoodProperties BLACK_TEA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.TRAIL_BLAZING.get(), 3000, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.LAVA_WALKING.get(), 6000, 0), 1.0F).build();
+        public static final FoodProperties AZALEA_TEA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 2400, 0), 1.0F).build();
+        public static final FoodProperties HONEY_TEA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.TRUE_INVISIBILITY.get(), 300, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.BLOOD_CLOT.get(), 1200, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.VULNERABILITY.get(), 1200, 2), 1.0F).build();
+        public static final FoodProperties KELP_TEA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.WATER_WALKING.get(), 6000, 0), 1.0F).build();
+        public static final FoodProperties SPICY_COFFEE = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.PYROMANIAC.get(), 1200, 0), 1.0F).effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3000, 0), 1.0F).build();
+        public static final FoodProperties HOT_COCOA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.TOUGH_SKIN.get(), 1800, 0), 1.0F).build();
+        public static final FoodProperties SPICY_HOT_COCOA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.FIRE_SKIN.get(), 3000, 0), 1.0F).build();
+        public static final FoodProperties CHOCOLATE_MILK = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.DROWSY.get(), 1800, 0), 1.0F).build();
+        public static final FoodProperties MUSHROOM_TEA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.DROWSY.get(), 3000, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.PERCEPTION.get(), 20, 0), 1.0F).effect(new MobEffectInstance(MobEffects.CONFUSION, 20, 0), 0.5F).build();
     }
 }
