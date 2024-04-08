@@ -14,10 +14,10 @@ Release Update
    •   Coffee - Haste, Lesser Weakness
    •   Dark Coffee - Haste II, Lesser Weakness IV
    •   Kelp Tea - Water Walking
-   •   Chocolate Milk - Drowsy
+   •   Chocolate Milk - Drowsy, Vulnerability II
    •   Honey Tea - True Invisibility, Blood Clot, Vulnerability
-   •   Azalea Tea - Health Boost
-   •   Mushroom Tea - Drowsy, Nausea, Perception
+   •   Azalea Tea - Health Boost, 25% for Luck II
+   •   Mushroom Tea - Drowsy, Perception, Vulnerability II, 50% chance for Nausea
    •   Spicy Coffee - Pyromaniac, Speed
    •   Spicy Hot Cocoa - Fire Skin
    •   Hot Cocoa - Tough Skin
