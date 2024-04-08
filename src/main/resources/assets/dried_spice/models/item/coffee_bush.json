@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dried_spice:block/coffee_bush_stage3_bottom"
+  }
+}

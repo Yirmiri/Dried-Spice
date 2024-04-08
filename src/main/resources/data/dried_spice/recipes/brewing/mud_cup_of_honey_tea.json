@@ -5,19 +5,19 @@
       "item": "dried_spice:mud_cup_of_water"
     },
     {
-      "item": "dried_spice:mango"
+      "item": "minecraft:honey_block"
     },
     {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:honey_block"
     },
     {
       "item": "minecraft:sugar"
     },
     {
-      "item": "minecraft:honey_block"
+      "item": "minecraft:oxeye_daisy"
     }
   ],
   "result": {
-    "item": "dried_spice:mud_cup_of_mango_tea"
+    "item": "dried_spice:mud_cup_of_honey_tea"
   }
 }

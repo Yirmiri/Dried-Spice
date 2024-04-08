@@ -1,0 +1,7 @@
+{
+  "parent": "dried_spice:template/template_small_to_double_plant",
+  "textures": {
+    "particle": "minecraft:block/spruce_leaves",
+    "0": "dried_spice:block/coffee_bush_stage3"
+  }
+}

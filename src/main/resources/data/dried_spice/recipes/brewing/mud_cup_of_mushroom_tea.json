@@ -1,0 +1,20 @@
+{
+  "type": "dried_spice:brewing",
+  "ingredients": [
+    {
+      "item": "dried_spice:mud_cup_of_water"
+    },
+    {
+      "item": "dried_spice:dried_brown_mushroom"
+    },
+    {
+      "item": "dried_spice:dried_tea_leaves"
+    },
+    {
+      "item": "minecraft:moss_block"
+    }
+  ],
+  "result": {
+    "item": "dried_spice:mud_cup_of_mushroom_tea"
+  }
+}

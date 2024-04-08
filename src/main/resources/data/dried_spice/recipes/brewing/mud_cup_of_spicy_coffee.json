@@ -1,0 +1,20 @@
+{
+  "type": "dried_spice:brewing",
+  "ingredients": [
+    {
+      "item": "dried_spice:mud_cup_of_water"
+    },
+    {
+      "item": "dried_spice:coffee_beans"
+    },
+    {
+      "item": "dried_spice:soul_pepper"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "dried_spice:mud_cup_of_spicy_coffee"
+  }
+}

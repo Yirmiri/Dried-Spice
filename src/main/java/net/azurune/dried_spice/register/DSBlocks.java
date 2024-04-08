@@ -30,6 +30,7 @@ public class DSBlocks {
     public static final RegistryObject<Block> AZALEA_FLOWER = register("azalea_flower", () -> new GlowLichenBlock(DSProperties.BlockProperties.AZALEA_FLOWER));
     public static final RegistryObject<Block> PEPPER_CROP = register("pepper_crop", () -> new PepperBlock(DSProperties.BlockProperties.PEPPER_PLANT));
     public static final RegistryObject<Block> SOUL_PEPPER_CROP = register("soul_pepper_crop", () -> new SoulPepperBlock(DSProperties.BlockProperties.SOUL_PEPPER_PLANT));
+    public static final RegistryObject<Block> COFFEE_BUSH = register("coffee_bush", () -> new CoffeeBushBlock(DSProperties.BlockProperties.COFFEE_BUSH));
 
     //DRINK BLOCKS
     public static final RegistryObject<Block> DECORATIVE_BOTTLE = register("decorative_bottle", () -> new DecorativeBottleBlock(DSProperties.BlockProperties.DECORATIVE_BOTTLE));

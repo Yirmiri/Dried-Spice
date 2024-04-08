@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "dried_spice:block/coffee_bush_stage1"
+  }
+}

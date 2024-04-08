@@ -38,6 +38,7 @@ public class DSItems {
     public static final RegistryObject<Item> MUD_CUP_OF_MUSHROOM_TEA = ITEMS.register("mud_cup_of_mushroom_tea", () -> new MushroomTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.MUSHROOM_TEA).stacksTo(1), 48));
     public static final RegistryObject<Item> MUD_CUP_OF_AZALEA_TEA = ITEMS.register("mud_cup_of_azalea_tea", () -> new AzaleaTeaDrinkItem(new Item.Properties().food(DSProperties.Foods.AZALEA_TEA).stacksTo(2), 48));
     public static final RegistryObject<Item> MUD_CUP_OF_CHOCOLATE_MILK = ITEMS.register("mud_cup_of_chocolate_milk", () -> new ChocolateMilkDrinkItem(new Item.Properties().food(DSProperties.Foods.CHOCOLATE_MILK).stacksTo(1), 48));
+    public static final RegistryObject<Item> MUD_CUP_OF_FUDGE_SUNDAE = ITEMS.register("mud_cup_of_fudge_sundae", () -> new FudgeSundaeItem(new Item.Properties().food(DSProperties.Foods.FUDGE_SUNDAE).stacksTo(1), 256));
 
     //NATURAL
     public static final RegistryObject<Item> PEPPER_SEEDS = ITEMS.register("pepper_seeds", () -> new ItemNameBlockItem(DSBlocks.PEPPER_CROP.get(), new Item.Properties()));

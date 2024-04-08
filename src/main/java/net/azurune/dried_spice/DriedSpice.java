@@ -65,6 +65,7 @@ public class DriedSpice {
         ItemBlockRenderTypes.setRenderLayer(DSBlocks.DECORATIVE_HONEY_BOTTLE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DSBlocks.DECORATIVE_DRAGONS_BREATH_BOTTLE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DSBlocks.DECORATIVE_MILK_BOTTLE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DSBlocks.COFFEE_BUSH.get(), RenderType.cutout());
 
 
         MenuScreens.register(DSMenuTypes.TEA_KETTLE_MENU.get(), TeaKettleScreen::new);
@@ -101,6 +102,7 @@ public class DriedSpice {
             tab.accept(DSItems.TEA_LEAVES);
             tab.accept(DSItems.DRIED_TEA_LEAVES);
             tab.accept(DSItems.DRIED_BROWN_MUSHROOM);
+            tab.accept(DSBlocks.COFFEE_BUSH);
             tab.accept(DSItems.COFFEE_BEANS);
             tab.accept(DSItems.PEPPER_SEEDS);
             tab.accept(DSItems.SOUL_PEPPER_SEEDS);

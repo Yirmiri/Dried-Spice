@@ -1,0 +1,17 @@
+{
+  "type": "dried_spice:brewing",
+  "ingredients": [
+    {
+      "item": "dried_spice:mud_cup_of_chocolate_milk"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "dried_spice:pepper"
+    }
+  ],
+  "result": {
+    "item": "dried_spice:mud_cup_of_hot_cocoa"
+  }
+}

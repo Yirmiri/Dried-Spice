@@ -1,6 +1,6 @@
 package net.azurune.dried_spice.item.drinks.milks;
 
-import net.azurune.dried_spice.item.drinks.GenericDrinkItem;
+import net.azurune.dried_spice.item.GenericThickDrinkItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -9,7 +9,7 @@ import net.minecraft.world.level.Level;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class ChocolateMilkDrinkItem extends GenericDrinkItem {
+public class ChocolateMilkDrinkItem extends GenericThickDrinkItem {
     public ChocolateMilkDrinkItem(Properties properties, int speed) {
         super(properties, speed);
     }

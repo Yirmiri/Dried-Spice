@@ -9,11 +9,27 @@ Release Update
 
   Additions
 •   Added the tea kettle, a new crafting station which most tea making will take place
-•   Added a bunch of new drinks each with their own effects!
-•   Added tons of new potion effects, most exclusive to the new drinks (thanks to Zeus for creating some of them :P)
-•   Added new ingredients such as tea leaves, azalea flowers, dried mushrooms, and more!
-•   Added peppers, can be obtained from piglin bartering or bastions and grants short fire resistance, mainly used as an ingredient and can be planted
+•   Added a bunch of new drinks each with their own effects (some new effects from my library mod TipsyLib)!
+   •   Green Tea - Regeneration
+   •   Coffee - Haste, Lesser Weakness
+   •   Dark Coffee - Haste II, Lesser Weakness IV
+   •   Kelp Tea - Water Walking
+   •   Chocolate Milk - Drowsy
+   •   Honey Tea - True Invisibility, Blood Clot, Vulnerability
+   •   Azalea Tea - Health Boost
+   •   Mushroom Tea - Drowsy, Nausea, Perception
+   •   Spicy Coffee - Pyromaniac, Speed
+   •   Spicy Hot Cocoa - Fire Skin
+   •   Hot Cocoa - Tough Skin
+   •   Black Tea - Trail Blazing, Lava Walking
+   •   Mango Tea - Steel Feet
+•   Added new ingredients such as tea leaves, azalea flowers, dried mushrooms, and more! (some natural generate, more info below)
+   •   Added coffee bushes that spawn and jungles and work similar to berry bushes
+   •   Added mangos which can be obtained from jungle leaves
+   •   Added tea leaves which can be obtained from azalea leaves
+   •   Added azalea flower which can be obtained from flowering azalea leaves
+   •   Added peppers, can be obtained from piglin bartering or a new Nether structure and grants short fire resistance, mainly used as an ingredient and can be planted
 •   Added stoves, a simple building block to heat up tea kettles (has compat with Excessive Building's soul blocks)
-•   Added decorative bottle blocks
+•   Added decorative bottle blocks, can be sipped when in block form (empty bottles fill up when in water & honey heals hunger points)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

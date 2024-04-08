@@ -26,6 +26,7 @@ public class DSProperties {
         public static final BlockBehaviour.Properties AZALEA_FLOWER = BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.WET_GRASS).ignitedByLava().pushReaction(PushReaction.DESTROY);
         public static final BlockBehaviour.Properties PEPPER_PLANT = BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).noCollission().instabreak().sound(SoundType.NETHER_WART).pushReaction(PushReaction.DESTROY);
         public static final BlockBehaviour.Properties SOUL_PEPPER_PLANT = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).noCollission().instabreak().sound(SoundType.NETHER_WART).pushReaction(PushReaction.DESTROY).lightLevel((blockState) -> { return SoulPepperBlock.glowing(blockState) ? 0 : 5; });
+        public static final BlockBehaviour.Properties COFFEE_BUSH = BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.WET_GRASS).pushReaction(PushReaction.DESTROY);
 
         //DRINK BLOCKS
         public static final BlockBehaviour.Properties DECORATIVE_BOTTLE = BlockBehaviour.Properties.of().strength(0.2F, 0F).sound(SoundType.GLASS).mapColor(MapColor.NONE).pushReaction(PushReaction.DESTROY);
@@ -57,5 +58,6 @@ public class DSProperties {
         public static final FoodProperties SPICY_HOT_COCOA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.FIRE_SKIN.get(), 3000, 0), 1.0F).build();
         public static final FoodProperties CHOCOLATE_MILK = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.DROWSY.get(), 1800, 0), 1.0F).build();
         public static final FoodProperties MUSHROOM_TEA = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.DROWSY.get(), 3000, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.PERCEPTION.get(), 20, 0), 1.0F).effect(new MobEffectInstance(MobEffects.CONFUSION, 20, 0), 0.5F).build();
+        public static final FoodProperties FUDGE_SUNDAE = new FoodProperties.Builder().alwaysEat().effect(new MobEffectInstance(TLMobEffects.DROWSY.get(), 6000, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.PERCEPTION.get(), 6000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.CONFUSION, 6000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 6000, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.HYPER_ELASTICITY.get(), 6000, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.BLOOD_CLOT.get(), 6000, 0), 1.0F).effect(new MobEffectInstance(TLMobEffects.LESSER_WEAKNESS.get(), 6000, 2), 1.0F).effect(new MobEffectInstance(TLMobEffects.VULNERABILITY.get(), 6000, 2), 1.0F).effect(new MobEffectInstance(TLMobEffects.HEALTH_REDUCTION.get(), 6000, 4), 1.0F).effect(new MobEffectInstance(TLMobEffects.ENIGMA.get(), 6000, 0), 1.0F).effect(new MobEffectInstance(MobEffects.HARM, 1, 0), 1.0F).build();
     }
 }
