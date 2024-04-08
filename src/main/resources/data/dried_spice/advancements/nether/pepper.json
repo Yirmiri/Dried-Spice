@@ -4,26 +4,26 @@
       "item": "dried_spice:pepper"
     },
     "title": {
-      "translate": "advancements.nether.plant_pepper.title"
+      "translate": "advancements.nether.pepper.title"
     },
     "description": {
-      "translate": "advancements.nether.plant_pepper.description"
+      "translate": "advancements.nether.pepper.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "parent": "minecraft:nether/distract_piglin",
   "criteria": {
     "pepper": {
-      "trigger": "minecraft:placed_block",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "location": [
+        "items": [
           {
-            "condition": "minecraft:block_state_property",
-            "block": "dried_tea:pepper_crop",
-            "properties": {}
+            "items": [
+              "dried_spice:pepper"
+            ]
           }
         ]
       }

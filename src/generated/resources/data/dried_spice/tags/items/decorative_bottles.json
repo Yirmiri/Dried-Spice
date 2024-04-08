@@ -4,20 +4,6 @@
     "dried_spice:decorative_water_bottle",
     "dried_spice:decorative_honey_bottle",
     "dried_spice:decorative_milk_bottle",
-    "dried_spice:decorative_dragons_breath_bottle",
-    "dried_spice:mud_cup_of_azalea_tea",
-    "dried_spice:mud_cup_of_black_tea",
-    "dried_spice:mud_cup_of_coffee",
-    "dried_spice:mud_cup_of_chocolate_milk",
-    "dried_spice:mud_cup_of_dark_coffee",
-    "dried_spice:mud_cup_of_fudge_sundae",
-    "dried_spice:mud_cup_of_green_tea",
-    "dried_spice:mud_cup_of_honey_tea",
-    "dried_spice:mud_cup_of_hot_cocoa",
-    "dried_spice:mud_cup_of_spicy_hot_cocoa",
-    "dried_spice:mud_cup_of_spicy_coffee",
-    "dried_spice:mud_cup_of_kelp_tea",
-    "dried_spice:mud_cup_of_mango_tea",
-    "dried_spice:mud_cup_of_mushroom_tea"
+    "dried_spice:decorative_dragons_breath_bottle"
   ]
 }

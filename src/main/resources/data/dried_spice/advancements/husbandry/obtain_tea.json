@@ -9,31 +9,28 @@
     "description": {
       "translate": "advancements.husbandry.obtain_tea.description"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "parent": "dried_spice:husbandry/place_kettle",
   "criteria": {
-    "obtain_tea": {
+    "get_kettle": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "tag": "dried_spice:teas"
           }
-          ]
+        ]
       }
     }
   },
   "requirements": [
     [
-      "obtain_tea"
+      "get_kettle"
     ]
   ],
-  "rewards": {
-    "experience": 0
-  },
   "sends_telemetry_event": true
 }

@@ -36,13 +36,14 @@
   "item.dried_spice.mud_cup_of_spicy_coffee": "Mud Cup of Spicy Coffee",
   "item.dried_spice.mud_cup_of_spicy_hot_cocoa": "Mud Cup of Spicy Hot Cocoa",
   "item.dried_spice.mud_cup_of_hot_cocoa": "Mud Cup of Hot Cocoa",
+  "item.dried_spice.mud_cup_of_fudge_sundae": "Mud Cup of Fudge Sundae",
 
   "advancements.husbandry.place_kettle.title": "Tea Time",
   "advancements.husbandry.place_kettle.description": "Place a tea kettle down and get ready to brew!",
   "advancements.husbandry.obtain_tea.title": "Spill The Tea",
   "advancements.husbandry.obtain_tea.description": "Brew any of the many teas, beware of a hot cup!",
-  "advancements.nether.plant_pepper.title": "Getting Spicy",
-  "advancements.nether.plant_pepper.description": "Plant a pepper, a once plentiful plant of the Nether.",
+  "advancements.nether.pepper.title": "Getting Spicy",
+  "advancements.nether.pepper.description": "Obtain a pepper, a once plentiful plant of the Nether.",
   "advancements.nether.soul_pepper.title": "Turning Up The Heat",
   "advancements.nether.soul_pepper.description": "Obtain a ghost pepper, be sure to bring some water before consumption...",
 

@@ -14,7 +14,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "dried_spice:nether/plant_pepper",
+  "parent": "minecraft:nether/loot_bastion",
   "criteria": {
     "soul_pepper": {
       "trigger": "minecraft:inventory_changed",

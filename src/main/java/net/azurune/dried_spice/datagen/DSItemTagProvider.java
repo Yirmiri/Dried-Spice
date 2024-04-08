@@ -34,7 +34,7 @@ public class DSItemTagProvider extends ItemTagsProvider {
                 DSBlocks.DECORATIVE_DRAGONS_BREATH_BOTTLE.get().asItem()
         );
 
-        this.tag(DSItemTagProvider.DECORATIVE_BOTTLES).add(
+        this.tag(DSItemTagProvider.TEAS).add(
                 DSItems.MUD_CUP_OF_AZALEA_TEA.get(),
                 DSItems.MUD_CUP_OF_BLACK_TEA.get(),
                 DSItems.MUD_CUP_OF_COFFEE.get(),
