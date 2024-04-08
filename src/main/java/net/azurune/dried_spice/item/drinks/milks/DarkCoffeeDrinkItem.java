@@ -1,7 +1,6 @@
 package net.azurune.dried_spice.item.drinks.milks;
 
 import net.azurune.dried_spice.item.drinks.GenericDrinkItem;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -17,13 +16,9 @@ public class DarkCoffeeDrinkItem extends GenericDrinkItem {
 
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
-        if (Screen.hasShiftDown()) {
-            components.add(Component.translatable("tooltip.dark_coffee.drink").withStyle());
-        } else {
-            components.add(Component.translatable("tooltip.shift.information").withStyle());
-        }
-        super.appendHoverText(itemStack, level, components, tooltipFlag);
+        components.add(Component.translatable("tooltip.dark_coffee.drink").withStyle());
+            super.appendHoverText(itemStack, level, components, tooltipFlag);
         components.add(Component.translatable("desc.dark_coffee.drink").withStyle());
-        super.appendHoverText(itemStack, level, components, tooltipFlag);
+            super.appendHoverText(itemStack, level, components, tooltipFlag);
     }
 }
