@@ -29,6 +29,14 @@ public class DSItemModelProvider extends ItemModelProvider {
         simpleItem(DSItems.COFFEE_BEANS);
         simpleItem(DSItems.DRIED_BROWN_MUSHROOM);
         simpleItem(DSItems.MUD_CUP_OF_BLACK_TEA);
+        simpleItem(DSItems.MUD_CUP_OF_KELP_TEA);
+        simpleItem(DSItems.MUD_CUP_OF_HOT_COCOA);
+        simpleItem(DSItems.MUD_CUP_OF_SPICY_HOT_COCOA);
+        simpleItem(DSItems.MUD_CUP_OF_SPICY_COFFEE);
+        simpleItem(DSItems.MUD_CUP_OF_HONEY_TEA);
+        simpleItem(DSItems.MUD_CUP_OF_MUSHROOM_TEA);
+        simpleItem(DSItems.MUD_CUP_OF_AZALEA_TEA);
+        simpleItem(DSItems.MUD_CUP_OF_CHOCOLATE_MILK);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

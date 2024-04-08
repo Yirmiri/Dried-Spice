@@ -1,6 +1,6 @@
-package net.azurune.dried_spice.item.drinks;
+package net.azurune.dried_spice.item.drinks.milks;
 
-import net.azurune.dried_spice.item.GenericDrinkItem;
+import net.azurune.dried_spice.item.drinks.GenericDrinkItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;

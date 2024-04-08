@@ -83,12 +83,20 @@ public class DriedSpice {
 
             tab.accept(DSItems.MUD_CUP);
             tab.accept(DSItems.MUD_CUP_OF_WATER);
-            tab.accept(DSItems.MUD_CUP_OF_MILK);
-            tab.accept(DSItems.MUD_CUP_OF_GREEN_TEA);
             tab.accept(DSItems.MUD_CUP_OF_BLACK_TEA);
+            tab.accept(DSItems.MUD_CUP_OF_GREEN_TEA);
+            tab.accept(DSItems.MUD_CUP_OF_AZALEA_TEA);
             tab.accept(DSItems.MUD_CUP_OF_MANGO_TEA);
+            tab.accept(DSItems.MUD_CUP_OF_HONEY_TEA);
+            tab.accept(DSItems.MUD_CUP_OF_KELP_TEA);
+            tab.accept(DSItems.MUD_CUP_OF_MUSHROOM_TEA);
+            tab.accept(DSItems.MUD_CUP_OF_MILK);
+            tab.accept(DSItems.MUD_CUP_OF_CHOCOLATE_MILK);
+            tab.accept(DSItems.MUD_CUP_OF_HOT_COCOA);
+            tab.accept(DSItems.MUD_CUP_OF_SPICY_HOT_COCOA);
             tab.accept(DSItems.MUD_CUP_OF_COFFEE);
             tab.accept(DSItems.MUD_CUP_OF_DARK_COFFEE);
+            tab.accept(DSItems.MUD_CUP_OF_SPICY_COFFEE);
 
             tab.accept(DSItems.TEA_LEAVES);
             tab.accept(DSItems.DRIED_TEA_LEAVES);

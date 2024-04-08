@@ -1,7 +1,7 @@
 package net.azurune.dried_spice.compat;
 
 import net.azurune.dried_spice.block.StoveBlock;
-import net.azurune.dried_spice.item.drinks.AncientTeaDrinkItem;
+import net.azurune.dried_spice.item.drinks.teas.AncientTeaDrinkItem;
 import net.azurune.dried_spice.util.DSProperties;
 import net.azurune.dried_spice.register.DSBlocks;
 import net.azurune.dried_spice.register.DSItems;

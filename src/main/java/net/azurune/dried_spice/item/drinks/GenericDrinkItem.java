@@ -1,4 +1,4 @@
-package net.azurune.dried_spice.item;
+package net.azurune.dried_spice.item.drinks;
 
 import net.azurune.dried_spice.register.DSItems;
 import net.minecraft.advancements.CriteriaTriggers;
