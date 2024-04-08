@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "dried_spice:pepper"
+    },
+    "title": {
+      "translate": "advancements.nether.plant_pepper.title"
+    },
+    "description": {
+      "translate": "advancements.nether.plant_pepper.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/distract_piglin",
+  "criteria": {
+    "pepper": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "dried_tea:pepper_crop",
+            "properties": {}
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pepper"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

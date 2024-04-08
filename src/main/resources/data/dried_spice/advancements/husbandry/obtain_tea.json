@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "dried_spice:mud_cup_of_water"
+    },
+    "title": {
+      "translate": "advancements.husbandry.obtain_tea.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.obtain_tea.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "dried_spice:husbandry/place_kettle",
+  "criteria": {
+    "obtain_tea": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "dried_spice:teas"
+          }
+          ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_tea"
+    ]
+  ],
+  "rewards": {
+    "experience": 0
+  },
+  "sends_telemetry_event": true
+}

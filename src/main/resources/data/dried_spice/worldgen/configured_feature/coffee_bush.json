@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:flower",
+  "type": "minecraft:random_patch",
   "config": {
     "feature": {
       "feature": {
@@ -8,7 +8,10 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "dried_spice:wild_coffee_bush"
+              "Name": "dried_spice:coffee_bush",
+              "Properties": {
+                "age": "2"
+              }
             }
           }
         }
@@ -17,14 +20,28 @@
         {
           "type": "minecraft:block_predicate_filter",
           "predicate": {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:grass_block",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
           }
         }
       ]
     },
-    "tries": 32,
-    "xz_spread": 6,
-    "y_spread": 2
+    "tries": 96,
+    "xz_spread": 7,
+    "y_spread": 3
   }
 }

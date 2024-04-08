@@ -40,7 +40,7 @@ public class CupItem extends Item {
                     if (level.getFluidState(blockpos).is(FluidTags.WATER)) {
                         level.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.BOTTLE_FILL, SoundSource.NEUTRAL, 1.0F, 1.0F);
                         level.gameEvent(player, GameEvent.FLUID_PICKUP, blockpos);
-                        return InteractionResultHolder.sidedSuccess(this.turnBottleIntoItem(itemstack, player, PotionUtils.setPotion(new ItemStack(DSItems.MUD_CUP_OF_WATER.get()), Potions.WATER)), level.isClientSide());
+                        return InteractionResultHolder.sidedSuccess(this.turnCupIntoItem(itemstack, player, PotionUtils.setPotion(new ItemStack(DSItems.MUD_CUP_OF_WATER.get()), Potions.WATER)), level.isClientSide());
                     }
                 }
 
@@ -48,7 +48,7 @@ public class CupItem extends Item {
             }
         }
 
-    protected ItemStack turnBottleIntoItem(ItemStack stack, Player player, ItemStack itemStack) {
+    protected ItemStack turnCupIntoItem(ItemStack stack, Player player, ItemStack itemStack) {
         player.awardStat(Stats.ITEM_USED.get(this));
         return ItemUtils.createFilledResult(stack, player, itemStack);
     }

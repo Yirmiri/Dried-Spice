@@ -3,14 +3,14 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:gameplay/piglin_bartering"
+      "loot_table_id": "minecraft:chests/bastion_treasure"
     },
     {
-      "chance": 0.3,
+      "chance": 1.0,
       "condition": "minecraft:random_chance"
     }
   ],
-  "item": "dried_spice:pepper",
+  "item": "dried_spice:soul_pepper_seeds",
   "max": 4,
   "min": 2
 }

@@ -31,5 +31,6 @@ Release Update
    •   Added peppers, can be obtained from piglin bartering or a new Nether structure and grants short fire resistance, mainly used as an ingredient and can be planted
 •   Added stoves, a simple building block to heat up tea kettles (has compat with Excessive Building's soul blocks)
 •   Added decorative bottle blocks, can be sipped when in block form (empty bottles fill up when in water & honey heals hunger points)
+•   Added a few advancements :P
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

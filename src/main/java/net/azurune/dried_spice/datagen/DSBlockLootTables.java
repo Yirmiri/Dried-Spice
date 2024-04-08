@@ -51,7 +51,6 @@ public class DSBlockLootTables extends BlockLootSubProvider {
         this.add(DSBlocks.DECORATIVE_HONEY_BOTTLE.get(), this::createBottlesTable);
         this.add(DSBlocks.DECORATIVE_MILK_BOTTLE.get(), this::createBottlesTable);
         this.dropSelf(DSBlocks.COFFEE_BUSH.get());
-        this.dropOther(DSBlocks.WILD_COFFEE_BUSH.get(), DSBlocks.COFFEE_BUSH.get());
     }
 
     @Override

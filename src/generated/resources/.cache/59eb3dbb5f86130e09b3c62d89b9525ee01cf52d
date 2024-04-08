@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-08T01:05:10.4430394	Loot Tables
+// 1.20.1	2024-04-08T14:21:30.7061908	Loot Tables
 e7248d0b41a0beb292e4576ee71e22806807caa0 data/dried_spice/loot_tables/blocks/azalea_flower.json
 e232f3201975167ecebb344637b9d71f8d3f22d1 data/dried_spice/loot_tables/blocks/coffee_bush.json
 85e9fb7c009a228e2751e6d0e3bdb76101d0dd7d data/dried_spice/loot_tables/blocks/copper_tea_kettle.json
@@ -12,4 +12,3 @@ b7b89493ac4c7a5e1ecbf30ef44a852a23bdaf69 data/dried_spice/loot_tables/blocks/dec
 cfd45dedb7f92f51ad0b2667538c4754860aeb98 data/dried_spice/loot_tables/blocks/soul_pepper_crop.json
 4925225155cb88cac9356a2f826a06c2b7d1387e data/dried_spice/loot_tables/blocks/soul_stove.json
 9f9fdb41d2f9f2aba0ac999f337e89fb9f2bdd82 data/dried_spice/loot_tables/blocks/stove.json
-6b59baf101a4566e9e432e656cdd020da22e5aaa data/dried_spice/loot_tables/blocks/wild_coffee_bush.json

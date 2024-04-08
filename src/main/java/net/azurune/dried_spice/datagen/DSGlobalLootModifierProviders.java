@@ -20,7 +20,7 @@ public class DSGlobalLootModifierProviders extends GlobalLootModifierProvider {
     @Override
     protected void start() {
         add("pepper_from_bartering", new AddItemModifier(new LootItemCondition[] {
-                new LootTableIdCondition.Builder(new ResourceLocation("gameplay/piglin_bartering")).build(), LootItemRandomChanceCondition.randomChance(0.2f).build()
+                new LootTableIdCondition.Builder(new ResourceLocation("gameplay/piglin_bartering")).build(), LootItemRandomChanceCondition.randomChance(0.3f).build()
         }, DSItems.PEPPER.get(), 2, 4));
 
         add("tea_leaves_from_azalea", new AddItemModifier(new LootItemCondition[] {
@@ -42,5 +42,13 @@ public class DSGlobalLootModifierProviders extends GlobalLootModifierProvider {
         add("mango_from_jungle_leaves", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("blocks/jungle_leaves")).build(), LootItemRandomChanceCondition.randomChance(0.2f).build()
         }, DSItems.MANGO.get(), 1, 1));
+
+        add("soul_pepper_seeds_from_bastion_treasure", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_treasure")).build(), LootItemRandomChanceCondition.randomChance(1.0f).build()
+        }, DSItems.SOUL_PEPPER_SEEDS.get(), 2, 4));
+
+        add("pepper_seeds_from_bastion_other", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_other")).build(), LootItemRandomChanceCondition.randomChance(0.2f).build()
+        }, DSItems.PEPPER_SEEDS.get(), 3, 6));
     }
 }

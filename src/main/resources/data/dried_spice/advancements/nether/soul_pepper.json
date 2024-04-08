@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "dried_spice:soul_pepper"
+    },
+    "title": {
+      "translate": "advancements.nether.soul_pepper.title"
+    },
+    "description": {
+      "translate": "advancements.nether.soul_pepper.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "dried_spice:nether/plant_pepper",
+  "criteria": {
+    "soul_pepper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dried_spice:soul_pepper"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "soul_pepper"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
