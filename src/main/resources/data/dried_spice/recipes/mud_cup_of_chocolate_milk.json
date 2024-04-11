@@ -3,7 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "dried_spice:mud_cup_of_milk"
+      "item": "dried_spice:mud_cup"
+    },
+    {
+      "item": "minecraft:milk_bucket"
     },
     {
       "item": "minecraft:cocoa_beans"
