@@ -1,6 +1,7 @@
 package net.azurune.dried_spice.block;
 
 import net.azurune.dried_spice.register.DSItems;
+import net.azurune.dried_spice.util.DSDamageTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,7 +19,7 @@ public class SoulPepperBlock extends PepperBlock {
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
         int i = state.getValue(AGE);
         if (!entity.isSteppingCarefully() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity) && i >= 2) {
-            entity.hurt(level.damageSources().hotFloor(), 2);
+            entity.hurt(DSDamageTypes.damageSource(level, DSDamageTypes.SOUL_PEPPER), 2);
         }
 
         super.entityInside(state, level, pos, entity);

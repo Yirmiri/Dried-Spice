@@ -54,6 +54,8 @@
   "death.attack.dried_spice.coffee_bush.player": "%1$s was forced into a prickly death to a coffee bush by %2$s",
   "death.attack.dried_spice.stove": "%1$s learnt it wasn't a good idea to play on the stove top",
   "death.attack.dried_spice.stove.player": "%1$s was cooked into a delicacy by %2$s",
+  "death.attack.dried_spice.soul_pepper": "%1$s couldn't withstand the heat of ghost peppers",
+  "death.attack.dried_spice.soul_pepper.player": "%1$s couldn't withstand the heat of ghost peppers while fleeing %2$s",
 
   "desc.generic.drink": "§7If you are reading this §6Yirmiri §7can be the one to blame for forgetting to add a description.",
   "desc.dark_coffee.drink": "§7Hello darkness my old friend.",

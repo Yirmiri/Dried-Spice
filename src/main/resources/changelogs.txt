@@ -10,7 +10,7 @@ Hotfix Update || 4/12/24
   Additions
 •   Added iced tea, iced tea halves the user's max health points but increases their damage exponentially
 •   Misc bastion chests now have a 5% chance to have soul pepper seeds (treasure bastions still have a 100% chance)
-•   Added a custom damage type & death message to stove tops
+•   Added a custom damage type & death message to stove tops and mature soul pepper crops
 •   Added 2 new show recipe click zones for JEI compat (one on the liquid meter and the other on the kettle icon)
 
   Changes
@@ -28,6 +28,7 @@ Hotfix Update || 4/12/24
 •   Fixed kelp tea recipes
 •   Fixed shortcut spicy hot cocoa recipe outputing normal hot cocoa
 •   Fixed the soul stove recipe crafting a normal stove (Excessive Building compat)
+•   Fixed missing sound effects for coffee bush poking
 •   Fixed JEI ui compat
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

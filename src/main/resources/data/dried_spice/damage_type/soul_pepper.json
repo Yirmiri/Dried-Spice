@@ -1,6 +1,6 @@
 {
   "effects": "burning",
   "exhaustion": 0.1,
-  "message_id": "dried_spice.stove",
+  "message_id": "dried_spice.soul_pepper",
   "scaling": "when_caused_by_living_non_player"
 }
