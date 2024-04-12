@@ -22,7 +22,7 @@ import java.util.Arrays;
 
 @ParametersAreNonnullByDefault @MethodsReturnNonnullByDefault
 public class TeaKettleCategory implements IRecipeCategory<TeaKettleRecipe> {
-    public static final ResourceLocation TEXTURE = new ResourceLocation(DriedSpice.MODID, "textures/gui/tea_kettle_jei.png");
+    public static final ResourceLocation TEXTURE = new ResourceLocation(DriedSpice.MODID, "textures/gui/tea_kettle_jei_TEMPFIX.png");
     public static final ResourceLocation UID = new ResourceLocation(DriedSpice.MODID, "brewing");
     public static final RecipeType<TeaKettleRecipe> BREWING = new RecipeType<>(UID, TeaKettleRecipe.class);
     private final IDrawable icon;
@@ -60,8 +60,7 @@ public class TeaKettleCategory implements IRecipeCategory<TeaKettleRecipe> {
             for (int column = 0; column < 3; ++column) {
                 int inputIndex = row * 3 + column;
                 if (inputIndex < recipe.getIngredients().size()) {
-                    builder.addSlot(RecipeIngredientRole.INPUT, (column * borderSlotSize) + 1, (row * borderSlotSize) + 1)
-                            .addItemStacks(Arrays.asList(recipe.getIngredients().get(inputIndex).getItems()));
+                    builder.addSlot(RecipeIngredientRole.INPUT, (column * borderSlotSize) + 1, (row * borderSlotSize) + 1).addItemStacks(Arrays.asList(recipe.getIngredients().get(inputIndex).getItems()));
                 }
             }
         }

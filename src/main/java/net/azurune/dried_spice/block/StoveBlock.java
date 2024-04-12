@@ -1,5 +1,6 @@
 package net.azurune.dried_spice.block;
 
+import net.azurune.dried_spice.util.DSDamageTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
@@ -105,7 +106,7 @@ public class StoveBlock extends HorizontalDirectionalBlock {
 
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if (!entity.isSteppingCarefully() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity)) {
-            entity.hurt(level.damageSources().hotFloor(), this.fireDamage);
+            entity.hurt(DSDamageTypes.damageSource(level, DSDamageTypes.STOVE), this.fireDamage);
         }
 
         super.stepOn(level, pos, state, entity);

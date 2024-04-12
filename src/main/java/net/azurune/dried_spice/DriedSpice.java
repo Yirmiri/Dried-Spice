@@ -86,6 +86,7 @@ public class DriedSpice {
             tab.accept(DSItems.MUD_CUP_OF_BLACK_TEA);
             tab.accept(DSItems.MUD_CUP_OF_GREEN_TEA);
             tab.accept(DSItems.MUD_CUP_OF_AZALEA_TEA);
+            tab.accept(DSItems.MUD_CUP_OF_ICED_TEA);
             tab.accept(DSItems.MUD_CUP_OF_MANGO_TEA);
             tab.accept(DSItems.MUD_CUP_OF_HONEY_TEA);
             tab.accept(DSItems.MUD_CUP_OF_KELP_TEA);

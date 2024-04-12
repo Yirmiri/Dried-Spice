@@ -12,9 +12,11 @@ import net.minecraft.world.level.Level;
 
 public class DSDamageTypes {
     public static final ResourceKey<DamageType> COFFEE_BUSH = create("coffee_bush");
+    public static final ResourceKey<DamageType> STOVE = create("stove");
 
     public static void bootstrap(BootstapContext<DamageType> context) {
         context.register(COFFEE_BUSH, new DamageType("dried_spice.coffee_bush", 0.1F, DamageEffects.POKING));
+        context.register(STOVE, new DamageType("dried_spice.stove", 0.1F, DamageEffects.BURNING));
     }
 
     private static ResourceKey<DamageType> create(String name) {

@@ -50,5 +50,9 @@ public class DSGlobalLootModifierProviders extends GlobalLootModifierProvider {
         add("pepper_seeds_from_bastion_other", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_other")).build(), LootItemRandomChanceCondition.randomChance(0.2f).build()
         }, DSItems.PEPPER_SEEDS.get(), 3, 6));
+
+        add("soul_pepper_seeds_from_bastion_other", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_other")).build(), LootItemRandomChanceCondition.randomChance(0.05f).build()
+        }, DSItems.SOUL_PEPPER_SEEDS.get(), 1, 2));
     }
 }

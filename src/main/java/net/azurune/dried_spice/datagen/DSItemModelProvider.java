@@ -38,6 +38,8 @@ public class DSItemModelProvider extends ItemModelProvider {
         simpleItem(DSItems.MUD_CUP_OF_AZALEA_TEA);
         simpleItem(DSItems.MUD_CUP_OF_CHOCOLATE_MILK);
         simpleItem(DSItems.MUD_CUP_OF_FUDGE_SUNDAE);
+        simpleItem(DSItems.MUD_CUP_OF_ESPRESSO);
+        simpleItem(DSItems.MUD_CUP_OF_ICED_TEA);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

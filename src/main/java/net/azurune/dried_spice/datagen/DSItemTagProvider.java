@@ -48,7 +48,9 @@ public class DSItemTagProvider extends ItemTagsProvider {
                 DSItems.MUD_CUP_OF_SPICY_COFFEE.get(),
                 DSItems.MUD_CUP_OF_KELP_TEA.get(),
                 DSItems.MUD_CUP_OF_MANGO_TEA.get(),
-                DSItems.MUD_CUP_OF_MUSHROOM_TEA.get()
+                DSItems.MUD_CUP_OF_MUSHROOM_TEA.get(),
+                DSItems.MUD_CUP_OF_ESPRESSO.get(),
+                DSItems.MUD_CUP_OF_ICED_TEA.get()
         );
     }
 

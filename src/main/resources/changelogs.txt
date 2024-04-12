@@ -5,7 +5,22 @@ Literally just a secret .txt file of every single update's changelog
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Version Release v1.0.1 (Forge/NeoForge: 1.20.1)
-Hotfix Update
+Hotfix Update || 4/12/24
+
+  Additions
+•   Added iced tea, iced tea halves the user's max health points but increases their damage exponentially
+•   Misc bastion chests now have a 5% chance to have soul pepper seeds (treasure bastions still have a 100% chance)
+•   Added a custom damage type & death message to stove tops
+•   Added 2 new show recipe click zones for JEI compat (one on the liquid meter and the other on the kettle icon)
+
+  Changes
+•   The mod now requires TipsyLib v1.0.1
+•   Reduced the time it takes to consume honey tea from 64 ticks to 48 ticks
+•   Soul peppers now grant trail blazing for 10 seconds instead of fire resistance
+•   Coffee has been changed to grant haste 3 & -4 damage
+•   Dark coffee has been changed to grant speed 3 & -4 damage
+•   Changed coffee's description to "Fit for a Queen..." (lang is at the bottom of the desc section, yw translators)
+•   Changed the texture of coffee
 
   Bug Fixes
 •   Fixed missing translation for dried brown mushrooms
@@ -13,6 +28,7 @@ Hotfix Update
 •   Fixed kelp tea recipes
 •   Fixed shortcut spicy hot cocoa recipe outputing normal hot cocoa
 •   Fixed the soul stove recipe crafting a normal stove (Excessive Building compat)
+•   Fixed JEI ui compat
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
