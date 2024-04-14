@@ -4,6 +4,18 @@ Literally just a secret .txt file of every single update's changelog
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Version Release v1.0.2 (Forge/NeoForge: 1.20.1)
+??? Update || ??/??/24
+
+  Additions
+•   Added ru_ru translations (done by @bricker_man)
+
+  Bug Fixes
+•   Fixed outdated coffee and dark coffee descriptions
+•   Mushroom tea now grants -4 armor instead of -2 as the description says
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Version Release v1.0.1 (Forge/NeoForge: 1.20.1)
 Hotfix Update || 4/12/24
 

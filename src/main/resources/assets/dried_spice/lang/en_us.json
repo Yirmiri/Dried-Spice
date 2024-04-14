@@ -90,10 +90,10 @@
   "tooltip.chocolate_milk.drink": "§9Removes the ability to lose effects and removes -4 armor points.",
   "tooltip.honey_tea.drink": "§9Grants true invisibility and removes -6 armor points and the ability to heal for a short time.",
   "tooltip.fudge_sundae.drink": "§6This isn't fudge sundae... is it?",
-  "tooltip.coffee.drink": "§9Slightly increases digging, attack speed and decreasing attack strength for a short time.",
-  "tooltip.dark_coffee.drink": "§9Increases digging, attack speed and decreasing attack strength for an average time.",
-  "tooltip.espresso.drink": "§6Yirmiri §7forgot to add an effect... didn't she",
   "tooltip.iced_tea.drink": "§9Halves the user's max health but for every missing health point a damage point is added to them for an average time.",
+  "tooltip.coffee.drink": "§9Greatly increases digging, attack speed and decreasing attack strength for an average time.",
+  "tooltip.dark_coffee.drink": "§9Greatly increases movement speed and decreasing attack strength for an average time.",
+  "tooltip.espresso.drink": "§6Yirmiri §7forgot to add an effect... didn't she",
 
   "stat.minecraft.interact_with_kettle": "Interactions with Tea Kettle",
   "stat.minecraft.drink_decorative_bottle": "Decorative Bottle Sips",
