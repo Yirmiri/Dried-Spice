@@ -42,7 +42,5 @@ public class DSJEIPlugin implements IModPlugin {
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
         registration.addRecipeClickArea(TeaKettleScreen.class, 85, 37, 10, 11, TeaKettleCategory.BREWING);
-        registration.addRecipeClickArea(TeaKettleScreen.class, 82, 50, 16, 16, TeaKettleCategory.BREWING);
-        registration.addRecipeClickArea(TeaKettleScreen.class, 65, 24, 20, 20, TeaKettleCategory.BREWING);
     }
 }
