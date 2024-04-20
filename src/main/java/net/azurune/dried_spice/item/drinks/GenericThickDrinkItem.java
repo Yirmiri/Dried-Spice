@@ -1,6 +1,5 @@
-package net.azurune.dried_spice.item;
+package net.azurune.dried_spice.item.drinks;
 
-import net.azurune.dried_spice.item.drinks.GenericDrinkItem;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 
