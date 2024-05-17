@@ -9,4 +9,3 @@ Make sure you only download this mod on CurseForge & Modrinth, I will never put 
 DrMangoTea was there OwO
 BackupCup was there >///<
 Yirmiri was there -_-
-MilkFur was uhhh idk :P
