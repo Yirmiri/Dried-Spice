@@ -1,5 +1,5 @@
 
-    Dried Spice is a mod that adds unique teas to Minecraft!
+    Bitter Brews is a mod that adds unique teas to Minecraft!
 Feel free to report issues via the CurseForge page or GitHub.
 
 You can follow updates on this & other projects in the official Azurune Discord server or via Twitter: https://discord.gg/jmHpajd, https://twitter.com/Yirmiris
